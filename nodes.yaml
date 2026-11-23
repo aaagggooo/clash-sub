@@ -1,4 +1,4 @@
-# 每日维护订阅 | 2026-11-23 | 共 166 个: 实测稳定 36 + 源测速达标 130 + hy2/WG存活 0
+# 每日维护订阅 | 2026-11-23 | 共 166 个: 实测稳定 36 + 源测速达标 130 + hy2/WG存活 3
 # 实测稳定 = 本地测速点连测3轮全部有响应(忽通忽断已删); 延迟在本测速点测得, 与你本地客户端数值不同
 mixed-port: 7890
 allow-lan: false
@@ -2219,7 +2219,10 @@ proxy-groups:
   - 🇩🇪DE_119|1.6MB/s|B007-260618 [1f82b6bffd55]
 - name: 🛜 hy2/WG存活筛选
   type: select
-  proxies: []
+  proxies:
+  - 🇨🇳CN_1|1.7MB/s
+  - 🇨🇳CN_2|2.3MB/s
+  - ❓Other_2|1.7MB/s
 - name: 🌐 全部节点
   type: select
   proxies:

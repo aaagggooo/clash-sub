@@ -1,1 +1,2393 @@
-# clash subscription - will be updated daily
+# 每日维护订阅 | 2026-11-23 | 共 166 个: 实测稳定 36 + 源测速达标 130 + hy2/WG存活 0
+# 实测稳定 = 本地测速点连测3轮全部有响应(忽通忽断已删); 延迟在本测速点测得, 与你本地客户端数值不同
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇫🇷FR_140|706KB/s|C002-260622 [6f275700373d]
+  client-fingerprint: firefox
+  network: ws
+  port: 443
+  server: 185.18.250.2
+  sub_tag: C002-260622
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1058c340-5e14-45ff-bd10-ebd64a225be2
+  ws-opts:
+    headers:
+      Host: worker3.nojisoj4574.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: worker3.nojisoj4574.workers.dev
+- name: 🇺🇸US_272|1.7MB/s|M003-260806 [0f851a6a1744]
+  client-fingerprint: chrome
+  password: nwilryafgkyvuxauc8pz
+  port: 50875
+  server: 69.164.240.85
+  skip-cert-verify: true
+  sni: 69.164.240.85
+  sub_tag: M003-260806
+  type: trojan
+  udp: true
+  network: tcp
+- type: ss
+  name: 🇮🇹IT意大利丨yoyapai.com (7)
+  server: 202.50.253.63
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇳🇱NL_32|4.8MB/s|A004-260618 [d8fb37e5c506]
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.165
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- type: ss
+  name: ❓未知丨yoyapai.com (8)
+  server: 202.50.253.18
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: ❓未知丨yoyapai.com (17)
+  server: 202.50.253.99
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: ❓未知丨yoyapai.com (4)
+  server: 202.50.253.72
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇩🇪DE_69|2.8MB/s|B007-260618 [1134b8e46720]
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  network: tcp
+  port: 1270
+  server: 185.177.229.95
+  sub_tag: B007-260618
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  packet-encoding: xudp
+  servername: xmfhlpy.com
+- type: ss
+  name: 🇮🇹IT意大利丨yoyapai.com
+  server: 202.50.253.81
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹IT意大利丨yoyapai.com (2)
+  server: 202.50.253.54
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: ❓未知丨yoyapai.com (18)
+  server: 202.50.253.36
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: ❓未知丨yoyapai.com (6)
+  server: 202.50.253.27
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇳🇱NL_29|7.0MB/s|A004-260618 [0e3d0fb5ae4d]
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.178
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 🇸🇬SG_24|827KB/s|M003-260806 [4a280760256b]
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 149.88.106.73
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- name: 🇺🇸US_170|820KB/s|R002-260618 [ffc0819f735f]
+  port: 9002
+  server: 138.199.35.195
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_75|832KB/s|R002-260618 [fc73875d8c32]
+  port: 443
+  server: goedkoopgeluid.icu
+  skip-cert-verify: true
+  sni: goedkoopgeluid.icu
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- type: vless
+  name: '@DeltaKroneckerGithub_547_IPV4'
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  sni: jp3.yohototo.top
+  skip-cert-verify: true
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇨🇭CH_1|3.7MB/s
+  port: 9443
+  server: 37.120.213.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇰🇷KR_1|4.1MB/s
+  port: 1090
+  server: 121.169.46.116
+  skip-cert-verify: true
+  type: socks5
+  username: T2clM0QlM0Q6
+- name: 🇺🇸US_115|849KB/s|R002-260618 [69ea03375d59]
+  password: None
+  port: 9002
+  server: 138.199.35.195
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_86|771KB/s|P002-260618 [e1485bbbb7ea]
+  password: None
+  port: 443
+  server: kimberlymilano.icu
+  skip-cert-verify: false
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  sni: kimberlymilano.icu
+- name: 🇺🇸US_87|812KB/s|P002-260618 [d842677472af]
+  password: None
+  port: 443
+  server: goedkoopgeluid.icu
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  sni: goedkoopgeluid.icu
+- name: 🇳🇱NL_80|6.7MB/s [faaf59d2e35f]
+  password: 'null'
+  port: 9002
+  server: 84.17.47.148
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇳🇱NL_65|4.6MB/s|R002-260618 [bcf20a2004d6]
+  port: 23856
+  server: 51.159.225.196
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇨🇭CH_27|1005KB/s|P002-260618 [58b636345fb8]
+  password: None
+  port: 9443
+  server: 37.120.213.210
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇳🇱NL_202|6.1MB/s|R002-260618 [6c371118d960]
+  password: None
+  port: 9002
+  server: 84.17.47.148
+  skip-cert-verify: true
+  sni: 84.17.47.148
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇫🇷FR_49|1.6MB/s|R002-260618 [11547d29f85c]
+  port: 9443
+  server: 213.139.9.142
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇩🇪DE_79|4.4MB/s [eafd2408d13f]
+  password: 'null'
+  port: 9002
+  server: 158.173.154.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇷🇴RO_48|2.2MB/s|R002-260618 [16b7d44488cc]
+  port: 9002
+  server: 193.176.84.31
+  skip-cert-verify: true
+  sni: www.bing.com
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇳🇱NL_48|5.2MB/s|P002-260618 [6aa08aa36e29]
+  password: None
+  port: 23856
+  server: 51.159.225.196
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇳🇱NL_92|5.5MB/s|R002-260618 [4251bc4d7d7f]
+  port: 9002
+  server: 84.17.47.123
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇷🇴RO_8|1.4MB/s|P002-260618 [6afe02c1bfa7]
+  password: None
+  port: 9002
+  server: 193.176.84.31
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇷🇴RO_71|1.9MB/s|R002-260618 [11354267ebab]
+  password: 'null'
+  port: 9002
+  server: 193.176.84.31
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇬🇷GR_1|865KB/s|R002-260618 [d9919f848d30]
+  port: 443
+  server: 149.22.85.65
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇮🇩ID_4|442KB/s|R002-260618 [6d6be7d79ea1]
+  password: 'null'
+  port: 443
+  server: 178.248.73.58
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇸🇬SG_9|582KB/s|R002-260618 [89790aba7d69]
+  port: 443
+  server: 154.26.139.24
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇳🇱NL_163|9.6MB/s|A004-260618 [5d74d658f7e7]
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.218
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 🇳🇱NL_186|8.8MB/s|T001-260618 [dbae37599e55]
+  cipher: aes-128-gcm
+  password: shadowsocks
+  port: 443
+  server: 158.173.20.171
+  sub_tag: T001-260618
+  type: ss
+  udp: true
+- name: 🇳🇱NL_159|8.6MB/s [c001d81cd7c4]
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.192
+  type: ss
+  udp: true
+- name: 🇳🇱NL_178|7.9MB/s|A004-260618 [f5ff2c49c095]
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.182
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 🇳🇱NL_244|7.7MB/s|M003-260806 [b615d1882ff6]
+  cipher: aes-128-gcm
+  password: shadowsocks
+  port: 443
+  server: leviko-nl8242.shopingggg.ir
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- name: 🇳🇱NL_237|7.5MB/s|A004-260618 [adfde9d80768]
+  cipher: aes-128-gcm
+  password: shadowsocks
+  port: 443
+  server: 158.173.20.208
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 🇳🇱NL_164|7.4MB/s|A004-260618 [5876974a2e32]
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 193.29.139.212
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 🇳🇱NL_158|7.2MB/s [f792f247b209]
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.219
+  type: ss
+  udp: true
+- name: 🇳🇱NL_247|7.1MB/s|A003-260618 [4be821c0eec1]
+  encryption: none
+  http-opts:
+    headers:
+      Host:
+      - fast.com
+    path:
+    - /
+  network: http
+  port: 443
+  server: 146.190.21.145
+  sub_tag: A003-260618
+  type: vless
+  udp: true
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+  xudp: true
+  packet-encoding: xudp
+- name: 🇬🇧GB_32|6.5MB/s|A003-260618 [749e60026aa3]
+  encryption: none
+  http-opts:
+    headers:
+      Host:
+      - fast.com
+    path:
+    - /
+  network: http
+  port: 443
+  server: 161.35.37.106
+  sub_tag: A003-260618
+  type: vless
+  udp: true
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+  xudp: true
+  packet-encoding: xudp
+- name: 🇳🇱NL_243|6.4MB/s|M003-260806 [2fe75f59ed6d]
+  encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  network: http
+  port: 443
+  server: 178.62.212.162
+  sub_tag: M003-260806
+  type: vless
+  udp: true
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+  xudp: true
+  packet-encoding: xudp
+- name: 🇩🇪DE_161|6.4MB/s|M003-260806 [52f007f73007]
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: leviko-de3729.shopingggg.ir
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- name: 🇳🇱NL_184|6.4MB/s [6495f691978f]
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.190
+  type: ss
+  udp: true
+- name: 🇳🇱NL_180|6.3MB/s|S004-260618 [08b0a3459590]
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 193.29.139.223
+  sub_tag: S004-260618
+  type: ss
+  udp: true
+- name: 🇫🇷FR_121|6.2MB/s|M003-260806 [87135b4e7341]
+  encryption: none
+  network: tcp
+  port: 30376
+  server: fr.abbaas.net
+  sub_tag: M003-260806
+  type: vless
+  udp: true
+  uuid: 'SoonTeam '
+  xudp: true
+  packet-encoding: xudp
+- name: 🇫🇷FR_114|6.1MB/s|B007-260618 [c08d879c58ba]
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  port: 8388
+  server: 107.161.160.28
+  sub_tag: B007-260618
+  type: ss
+  udp: true
+- name: 🇩🇪DE_129|6.0MB/s [fe00298482c1]
+  password: 'null'
+  port: 9002
+  server: 158.173.154.5
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇩🇪DE_174|5.8MB/s|M003-260806 [6ca9357ccdaa]
+  encryption: none
+  http-opts:
+    headers:
+      Host:
+      - store.steampowered.com
+    path:
+    - /
+  network: http
+  port: 443
+  server: 139.59.152.166
+  sub_tag: M003-260806
+  type: vless
+  udp: true
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+  xudp: true
+  packet-encoding: xudp
+- name: 🇬🇧GB_26|5.3MB/s|M003-260806 [c098ce6d60bc]
+  alterId: 0
+  cipher: auto
+  network: ws
+  port: 80
+  server: 57.129.132.223
+  skip-cert-verify: false
+  sub_tag: M003-260806
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  ws-opts:
+    headers:
+      Host: google.com
+    path: /vmess/
+  xudp: true
+  packet-encoding: xudp
+  servername: google.com
+- client-fingerprint: chrome
+  name: 🇯🇵JP_2|5.2MB/s
+  network: tcp
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  port: 34745
+  server: win2loxfde0303.gggrelay.org
+  skip-cert-verify: true
+  sni: nu3rb.supertoolify.com
+  type: trojan
+  udp: true
+- name: 🇫🇷FR_131|5.2MB/s|M003-260806 [38d58d240994]
+  client-fingerprint: chrome
+  encryption: none
+  network: xhttp
+  port: 443
+  server: 160.123.255.172
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc99c57d-6c93-4031-9153-73f510636533
+  xhttp-opts:
+    host: mama147.baklajann.ru
+    mode: auto
+    path: /
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-concurrency: '0'
+      max-connections: '4'
+  xudp: true
+  packet-encoding: xudp
+  servername: mama147.baklajann.ru
+- name: 🇮🇪IE_9|5.2MB/s|B007-260618 [b479ed40f709]
+  alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - tms.dingtalk.com
+    path:
+    - /
+  network: http
+  port: 59236
+  server: 54.229.151.97
+  skip-cert-verify: false
+  sub_tag: B007-260618
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2387bfbc-10a6-4bd7-dc55-7cba954ce6e8
+  xudp: true
+  packet-encoding: xudp
+- name: 🇫🇷FR_132|5.1MB/s|M003-260806 [b089a30d23af]
+  client-fingerprint: chrome
+  encryption: none
+  network: xhttp
+  port: 443
+  server: 185.18.250.147
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc99c57d-6c93-4031-9153-73f510636533
+  xhttp-opts:
+    host: 19.baklajann.ru
+    mode: auto
+    path: /
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-concurrency: '0'
+      max-connections: '4'
+  xudp: true
+  packet-encoding: xudp
+  servername: 19.baklajann.ru
+- name: 🇩🇪DE_164|5.0MB/s|S001-260618 [036a98c673ba]
+  password: ''
+  port: 1080
+  server: 92.5.68.29
+  skip-cert-verify: true
+  sub_tag: S001-260618
+  type: socks5
+  username: ''
+  udp: true
+- name: 🇫🇷FR_135|5.0MB/s|M003-260806 [1bf76171adc3]
+  client-fingerprint: chrome
+  encryption: none
+  network: xhttp
+  port: 443
+  server: 89.116.46.150
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc99c57d-6c93-4031-9153-73f510636533
+  xhttp-opts:
+    host: 145.baklajann.ru
+    mode: auto
+    path: /
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-concurrency: '0'
+      max-connections: '4'
+  xudp: true
+  packet-encoding: xudp
+  servername: 145.baklajann.ru
+- name: 🇩🇪DE_95|4.8MB/s|M003-260806 [b3819e34c142]
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 57.129.83.85
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- name: 🇳🇱NL_198|4.7MB/s|B007-260618 [6f5e01fd483e]
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  network: tcp
+  port: 1270
+  server: 188.166.81.135
+  sub_tag: B007-260618
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  packet-encoding: xudp
+  servername: xmfhlpy.com
+- name: 🇫🇷FR_134|4.6MB/s|M003-260806 [d116069d4b35]
+  client-fingerprint: chrome
+  encryption: none
+  network: xhttp
+  port: 443
+  server: 31.43.179.196
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc99c57d-6c93-4031-9153-73f510636533
+  xhttp-opts:
+    host: mama51.baklajann.ru
+    mode: auto
+    path: /
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-concurrency: '0'
+      max-connections: '4'
+  xudp: true
+  packet-encoding: xudp
+  servername: mama51.baklajann.ru
+- name: 🇳🇱NL_192|4.4MB/s|B007-260618 [0b935f0db5f6]
+  encryption: mlkem768x25519plus.native.0rtt.hew1F9CYPLUZiTdwAGVxEDx99Ywva4Q6UgfAVZhw28nC3xjKOUR9qsEO9sKs1vMRH6qFzzhpR_GD8II6mEoozjF-DDtNUcQlgbVy44qmzWW2rENt_NbA1bScfsNwK1kMPsc63wwgx1xxaCg3M-wEp6YKKXVxeKej3UmLzUFzk2MTVHioBUCnHoFnZnAGXiGfW8p8-CIBRkdpBggzFOQAUzuLL3h8-NW1dst86Mgj-bKToMBxxZQbntnLbBhJB9YiIyhWKlqaC4HH8Ic_-zKgAwabJcihXryapvIDwlEXCCfANaY6dOiDm1oG4vC3_Rc1GuWqZXgOjKE9fUKY0Cy08TWUagl0qbDFukMTR7mEN_N-7HN_qFF_UZqTmIjOUDCLxVQj4veEdEBXkZV9XbYNMHS3kqug3bcpIeh7beDH7aOC9XW3UrEKWwC9xpF1uFpvEcwz5pIOrVFBuMAnWAtaElSd7itKjdAzcYCPE9sTI7GDOWWZP7ddffx2umobaCeJSzenihwom3EEasN_zPUR7DeJcfFz8Gt-EsMwUThIXURn3_eOdZnCTsM8U2d_VdNIDhO_FMiZsqIfAFONNhXJSlm1DjfHCPOUtXcMqqFcyiuugRNlQCTL8_idd_Ii62s3enLLjwBZkjehmxEZDcRPiRGF_zdbAxAZUAysOttHsvEKRLq4HLMx78UuGgIrIqJbWFQIybqeXKsuVINp5DW6cYBAALopPNF951ITeClMVsaRLdZ9FBQ4DBFWWiav9EYpYcylgIOpQMJobDqfjIqH4TlBUPSvwrgMhwGsLZNEQ_q21KCxNuyrQDGv0QHDSRiLDjpTiMkvwNFEhZJkq1CD7ESRfLeSmaUCLzE0ssgL6SJmwzADz0gRkWp-lnM2tEHEF6uPlDRvLxpI0jpPj3Qth0qZQzAmucpT-1RGnlBf8YOfTYKPAXMS8CnB82kvAvhd-aUUK-BMwwq0eQq1YtU4kmUIU_zAjpemesvIqrpN4Vs1WUDNuTyWAsKSt6F3E1GSiOYJCYN9ntEdozeoE8FYBEFbg4xJxYVfJDKGQ-CMf9vIB8bMjhkqTiVOO_InesRl3idT9yIjk3dVBbu5jBGjW_QgNZFFbEcqICLPl6u1tCx_VyGbFhYv4iRVU9xXLFa1lsAJo7pC2DZreIuh2Va-YtcEX3qWThU8tdVEBGNCHGxQW6saRrKFEJJfPwAFHeyDyPYgQvAQF8LIUJJHmSA3FSJafcSGeUmQGeywPihEBizORLcSQJktPGGz6bMw8csPLbo2CNcm4FrNG3DOWEGNSMtS1OxTuRKk-JFA_SNnPCDJrWR2h9BycbPCRKkZZ6IN16kVMkxvTxo5XpODfpYMM5GCblB8ivQPdZl048mNO1eGGaybnvB8hFrChGKDROqTLFAe9CyBdZNDvfzIKnfK1XAnm8lo0WxqZrPEUOZvR-HAl0O-5SkBHmBEPFQZwVGIPTZ8_QkDVntKF-OZY5sAAhRiC-ukg6F4FKd8v_c0jNGQTvhUnvKIJqWZ68gGUqy0pwy7TQHwmHRuOmkiWTrU03uAbIBzZkVaUEaUTsWaUIQ
+  network: xhttp
+  port: 11443
+  server: n4.steptofsvo.com
+  sub_tag: B007-260618
+  type: vless
+  udp: true
+  uuid: ab6a5359-0edf-41c3-8dfd-e4b005e80820
+  xhttp-opts:
+    host: s3.storage.selcloud.ru
+    mode: stream-one
+    path: /my-bucket
+  xudp: true
+  packet-encoding: xudp
+- name: 🇫🇷FR_133|4.4MB/s|M003-260806 [0dfc73d6ecdf]
+  client-fingerprint: chrome
+  encryption: none
+  network: xhttp
+  port: 443
+  server: 188.42.89.118
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc99c57d-6c93-4031-9153-73f510636533
+  xhttp-opts:
+    host: mama1455.baklajann.ru
+    mode: auto
+    path: /
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-concurrency: '0'
+      max-connections: '4'
+  xudp: true
+  packet-encoding: xudp
+  servername: mama1455.baklajann.ru
+- name: 🇫🇷FR_107|4.4MB/s|M003-260806 [c6a774e63131]
+  alterId: '0'
+  cipher: auto
+  network: tcp
+  port: 1270
+  server: 91.134.35.72
+  skip-cert-verify: false
+  sub_tag: M003-260806
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  packet-encoding: xudp
+  servername: xmfhlpy.com
+- name: 🇫🇷FR_84|4.3MB/s|M003-260806 [f67f51250ba6]
+  client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: ec23f217-23a1-4f62-b98d-ba56070de89c
+  ws-opts:
+    headers:
+      Host: wallweb4.pages.dev
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: wallweb4.pages.dev
+- name: 🇩🇪DE_177|4.1MB/s|M003-260806 [8919a4a33770]
+  client-fingerprint: chrome
+  encryption: none
+  network: xhttp
+  port: 443
+  server: 194.156.26.125
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc99c57d-6c93-4031-9153-73f510636533
+  xhttp-opts:
+    host: mama120.baklajann.ru
+    mode: auto
+    path: /
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-concurrency: '0'
+      max-connections: '4'
+  xudp: true
+  packet-encoding: xudp
+  servername: mama120.baklajann.ru
+- name: 🇳🇱NL_258|4.1MB/s|M003-260806 [9a396ef5b0b1]
+  client-fingerprint: chrome
+  network: xhttp
+  port: 2053
+  server: render.com
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 97be5ac0-dae3-43c1-aae8-3fcb7b130c59
+  xhttp-opts:
+    host: Org-nether-soeiwhal-bssutudhdhese-beqhjdwter.maniyadg7shard.ir
+    mode: stream-one
+    x-padding-bytes: 100-1000
+  xudp: true
+  packet-encoding: xudp
+  servername: org-nether-soeiwhal-bssutudhdhese-beqhjdwter.maniyadg7shard.ir
+- name: 🇫🇷FR_118|4.1MB/s|M003-260806 [b7a61aef36f0]
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: leviko-fr8064.shopingggg.ir
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- name: 🇩🇪DE_128|3.9MB/s|R002-260618 [15e34f11142a]
+  port: 10809
+  server: 91.107.179.68
+  sub_tag: R002-260618
+  type: socks5
+  udp: true
+- name: 🇪🇸ES_24|3.9MB/s|M001-260618 [c60aac1f3b8b]
+  cipher: aes-256-cfb
+  password: U6qnYRhfyDmn8sgn
+  port: 9041
+  server: 5.188.181.201
+  sub_tag: M001-260618
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE_3|3.9MB/s
+  password: PhILhWBzyd28Q2ngasMt5E6l1Os4uCjv
+  port: 443
+  server: P1.shoppingturbo.com
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK_3|3.8MB/s
+  network: ws
+  port: 16632
+  server: pdmv4.xiaoyan.io
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  ws-opts:
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- name: 🇫🇷FR_77|3.5MB/s|M003-260806 [4c3ddca66888]
+  client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 104.16.251.179
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: fceb3200-2516-47d2-8e28-d04ecde9427a
+  ws-opts:
+    headers:
+      Host: edge-fef90023.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36 MVisionPlayer/1.0.0.0
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: edge-fef90023.pages.dev
+- name: 🇫🇷FR_97|3.4MB/s|M003-260806 [f9792fc8fdb4]
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: yd.2.hhhhh.eu.org
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: f0d6aa7c-0b34-4b68-9af8-1ea5e0b39bdc
+  ws-opts:
+    headers:
+      Host: ssj-wkg.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: ssj-wkg.pages.dev
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK_1|3.2MB/s
+  network: ws
+  port: 60852
+  server: hkgb707.ifastcdncache.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+- name: 🇯🇵JP_3|3.2MB/s|P002-260618
+  port: 343
+  server: 133.18.200.207
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇫🇷FR_95|3.2MB/s|M003-260806 [4aaafff0fd6c]
+  client-fingerprint: chrome
+  network: ws
+  port: 2083
+  server: 162.159.130.234
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  ws-opts:
+    headers:
+      Host: vp14.1145678.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /community/redirect.html
+  xudp: true
+  packet-encoding: xudp
+  servername: vp14.1145678.xyz
+- name: 🇫🇷FR_86|3.2MB/s|M003-260806 [6cf0955760dd]
+  client-fingerprint: chrome
+  network: ws
+  port: 2083
+  server: saas.sin.fan
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  ws-opts:
+    headers:
+      Host: vp14.1145678.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+    path: /community/redirect.html
+  xudp: true
+  packet-encoding: xudp
+  servername: vp14.1145678.xyz
+- name: 🇦🇱AL_1|3.1MB/s|P002-260618
+  password: None
+  port: 443
+  server: 87.120.103.242
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇫🇷FR_90|3.1MB/s|A004-260618 [7379c3bd2913]
+  client-fingerprint: chrome
+  network: ws
+  port: 2096
+  server: saas.sin.fan
+  sub_tag: A004-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  ws-opts:
+    headers:
+      Host: vp13.1145678.xyz
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36
+    path: /index/content
+  xudp: true
+  packet-encoding: xudp
+  servername: vp13.1145678.xyz
+- name: 🇸🇬SG_2|3.0MB/s
+  port: 9090
+  server: 128.199.254.13
+  skip-cert-verify: true
+  type: http
+- name: 🇮🇹IT_4|3.0MB/s
+  port: 2010
+  server: 91.199.137.149
+  skip-cert-verify: true
+  type: socks5
+- name: 🇫🇷FR_73|3.0MB/s|B004-260618 [236989c90cd1]
+  client-fingerprint: firefox
+  network: ws
+  port: 8443
+  server: 104.19.52.70
+  sub_tag: B004-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: fceb3200-2516-47d2-8e28-d04ecde9427a
+  ws-opts:
+    headers:
+      Host: edge-fef90023.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: edge-fef90023.pages.dev
+- name: 🇫🇷FR_116|3.0MB/s|M003-260806 [36c755082643]
+  client-fingerprint: firefox
+  encryption: none
+  network: ws
+  port: 443
+  server: 154.197.64.252
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 20b436fc-2c54-4248-b70d-14b8d6916d41
+  ws-opts:
+    headers:
+      Host: worker3.harijo3330.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /HGCmKaXbRNqpZqMv
+  xudp: true
+  packet-encoding: xudp
+  servername: worker3.harijo3330.workers.dev
+- name: 🇫🇷FR_139|3.0MB/s|C002-260622 [5724be86cb9d]
+  client-fingerprint: firefox
+  network: ws
+  port: 443
+  server: 154.197.64.252
+  sub_tag: C002-260622
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0d46fdf1-0dc5-4a71-8dfc-8f68ff6aab66
+  ws-opts:
+    headers:
+      Host: worker3.reviso4655.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: worker3.reviso4655.workers.dev
+- name: 🇫🇷FR_5|2.9MB/s|R002-260618
+  port: 8090
+  server: 80.124.109.22
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇯🇵JP_4|2.9MB/s
+  password: '123456'
+  port: 1080
+  server: 8.209.236.192
+  skip-cert-verify: true
+  type: socks5
+  username: '123456'
+- name: 🇪🇸ES_22|2.9MB/s|M001-260618 [cec30611080c]
+  cipher: aes-256-cfb
+  password: EXN3S3eQpjE7EJu8
+  port: 9027
+  server: 5.188.181.201
+  sub_tag: M001-260618
+  type: ss
+  udp: true
+- name: 🇷🇴RO_2|2.8MB/s|K001-260618
+  password: None
+  port: 9443
+  server: 135.136.1.2
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇫🇷FR_124|2.8MB/s|B007-260618 [0cf126f16bd9]
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  network: tcp
+  port: 1270
+  server: 23.162.152.127
+  sub_tag: B007-260618
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  packet-encoding: xudp
+  servername: xmfhlpy.com
+- name: 🇵🇱PL_21|2.8MB/s|B007-260618 [23d15896d913]
+  client-fingerprint: chrome
+  encryption: none
+  network: xhttp
+  port: 4443
+  server: 179.254.191.251
+  sub_tag: B007-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  xhttp-opts:
+    mode: auto
+    path: /api/v1/sync/
+  xudp: true
+  packet-encoding: xudp
+  servername: bl1.nexfile.net
+- name: 🇵🇱PL_22|2.8MB/s|M003-260806 [54e2a228308f]
+  client-fingerprint: chrome
+  encryption: none
+  network: xhttp
+  port: 4443
+  server: leviko-pl7089.shopingggg.ir
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  xhttp-opts:
+    mode: auto
+    path: /api/v1/sync/
+  xudp: true
+  packet-encoding: xudp
+  servername: bl1.nexfile.net
+- name: 🇵🇱PL_29|2.8MB/s|M003-260806 [b825854e415c]
+  client-fingerprint: chrome
+  encryption: none
+  network: xhttp
+  port: 443
+  server: 45.135.235.90
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc99c57d-6c93-4031-9153-73f510636533
+  xhttp-opts:
+    host: 51.baklajann.ru
+    mode: auto
+    path: /
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-concurrency: '0'
+      max-connections: '4'
+  xudp: true
+  packet-encoding: xudp
+  servername: 51.baklajann.ru
+- name: 🇵🇱PL_26|2.8MB/s|M003-260806 [f3cdca98680c]
+  client-fingerprint: chrome
+  encryption: none
+  network: xhttp
+  port: 443
+  server: 141.11.203.165
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc99c57d-6c93-4031-9153-73f510636533
+  xhttp-opts:
+    host: 186.baklajann.ru
+    mode: auto
+    path: /
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-concurrency: '0'
+      max-connections: '4'
+  xudp: true
+  packet-encoding: xudp
+  servername: 186.baklajann.ru
+- name: 🇪🇸ES_23|2.8MB/s|M001-260618 [f8c1cd6436c0]
+  cipher: aes-256-cfb
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 5.188.181.201
+  sub_tag: M001-260618
+  type: ss
+  udp: true
+- name: 🇩🇪DE_111|2.7MB/s|M003-260806 [2f25347662bf]
+  encryption: none
+  network: ws
+  port: 80
+  server: ov-germany1.09vpn.com
+  sub_tag: M003-260806
+  type: vless
+  udp: true
+  uuid: 3cfa0d9b-6279-4b73-8533-09ad84e49c80
+  ws-opts:
+    headers:
+      Host: /?Telegram---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP---@pirozi_ArGaP
+      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
+    path: /vless/
+  xudp: true
+  packet-encoding: xudp
+- name: 🇫🇷FR_128|2.7MB/s|M003-260806 [5a654cd983d7]
+  client-fingerprint: firefox
+  network: ws
+  port: 443
+  server: 45.135.235.255
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4dd8d557-dbe3-4c6f-a3ee-168da9a03d1b
+  ws-opts:
+    headers:
+      Host: worker3.paneger955.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: worker3.paneger955.workers.dev
+- name: 🇵🇱PL_19|2.7MB/s|M003-260806 [ea518a51213d]
+  client-fingerprint: chrome
+  encryption: none
+  network: xhttp
+  port: 4443
+  server: bl1.nexfile.net
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  xhttp-opts:
+    mode: auto
+    path: /api/v1/sync/
+  xudp: true
+  packet-encoding: xudp
+  servername: bl1.nexfile.net
+- name: 🇩🇪DE_147|2.7MB/s|M003-260806 [f5abea73e712]
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  port: 8388
+  server: 178.162.254.38
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- name: 🇨🇴CO_1|2.6MB/s
+  port: 9443
+  server: 158.247.125.5
+  skip-cert-verify: true
+  type: http
+- name: 🇫🇷FR_138|2.6MB/s|M003-260806 [09ad1489893e]
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: ip13.shabkhosh.sbs
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 49e72868-abfd-4557-b474-6777853a9c8d
+  ws-opts:
+    headers:
+      Host: wallwebb33p08.wallwebvycxcl.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: wallwebb33p08.wallwebvycxcl.workers.dev
+- name: 🇳🇱NL_204|2.6MB/s|R002-260618 [206e55a559c1]
+  password: 'null'
+  port: 9002
+  server: 84.17.47.126
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇳🇱NL_160|2.6MB/s [755ad3db773a]
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.180
+  type: ss
+  udp: true
+- name: 🇷🇴RO_100|2.6MB/s|A003-260618 [7d91af588a4b]
+  client-fingerprint: firefox
+  encryption: none
+  network: xhttp
+  port: 443
+  server: 31.6.1.115
+  sub_tag: A003-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0f2dc4af-951f-4690-922e-07c6e8bab26a
+  xhttp-opts:
+    host: cdn.winter-jam.site
+    mode: auto
+    path: /xh
+  xudp: true
+  packet-encoding: xudp
+  servername: cdn.winter-jam.site
+- name: 🇫🇷FR_71|2.5MB/s|S004-260618 [337816d7bf16]
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: ip13.shabkhosh.sbs
+  sub_tag: S004-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: bf20cf5a-30c1-4022-9bcb-ba798ad51531
+  ws-opts:
+    headers:
+      Host: wallweb7.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: wallweb7.pages.dev
+- name: 🇵🇱PL_28|2.5MB/s|M003-260806 [5facb19eb803]
+  client-fingerprint: chrome
+  encryption: none
+  network: xhttp
+  port: 443
+  server: 192.200.160.42
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc99c57d-6c93-4031-9153-73f510636533
+  xhttp-opts:
+    host: mama542.baklajann.ru
+    mode: auto
+    path: /
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-concurrency: '0'
+      max-connections: '4'
+  xudp: true
+  packet-encoding: xudp
+  servername: mama542.baklajann.ru
+- name: 🇵🇱PL_27|2.5MB/s|M003-260806 [ce5f8837819d]
+  client-fingerprint: chrome
+  encryption: none
+  network: xhttp
+  port: 443
+  server: 185.133.35.86
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc99c57d-6c93-4031-9153-73f510636533
+  xhttp-opts:
+    host: mama511.baklajann.ru
+    mode: auto
+    path: /
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-concurrency: '0'
+      max-connections: '4'
+  xudp: true
+  packet-encoding: xudp
+  servername: mama511.baklajann.ru
+- name: 🇩🇪DE_17|2.4MB/s
+  port: 443
+  server: 79.127.156.177
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇱🇹LT_8|2.4MB/s|R002-260618 [84576440cb72]
+  password: 'null'
+  port: 443
+  server: 89.124.11.9
+  skip-cert-verify: true
+  sni: 89.124.11.9
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇱🇹LT_9|2.4MB/s|C002-260622 [903b7eca0f0e]
+  cipher: aes-256-cfb
+  password: qYEN5HX4JKeVCdEC
+  port: 9039
+  server: 195.238.126.84
+  sub_tag: C002-260622
+  type: ss
+  udp: true
+- ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:8e4e:939b:b987:39aa:c46c/128
+  mtu: 1280
+  name: 🇨🇳CN_2|2.3MB/s
+  port: 3854
+  private-key: OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  reserved:
+  - 0
+  - 0
+  - 0
+  server: 8.6.112.134
+  type: wireguard
+  udp: true
+- name: 🇫🇷FR_93|2.3MB/s|M003-260806 [03be49038c69]
+  client-fingerprint: chrome
+  network: ws
+  port: 2053
+  server: saas.sin.fan
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  ws-opts:
+    headers:
+      Host: vp21.1145678.xyz
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36
+    path: /items/downloads
+  xudp: true
+  packet-encoding: xudp
+  servername: vp21.1145678.xyz
+- name: 🇪🇸ES_26|2.3MB/s|M003-260806 [4f451682530d]
+  cipher: aes-256-cfb
+  password: ZET59LF6DvCC8KVt
+  port: 9005
+  server: 5.188.181.201
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- name: 🇩🇪DE_13|2.2MB/s|R002-260618
+  port: 443
+  server: 152.233.20.206
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸US_13|2.2MB/s
+  password: 'null'
+  port: 443
+  server: 23.133.176.14
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- name: 🇨🇭CH_30|2.2MB/s|M003-260806 [52fd5871a5f1]
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: leviko-ch4470.shopingggg.ir
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- name: 🇩🇪DE_179|2.2MB/s|M003-260806 [5699bd6a7b2b]
+  alterId: '0'
+  cipher: auto
+  network: tcp
+  port: 443
+  server: 178.63.211.100
+  skip-cert-verify: false
+  sub_tag: M003-260806
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b7f9331a-192d-4d4f-a287-9dadab923a32
+  xudp: true
+  packet-encoding: xudp
+- name: 🇫🇷FR_66|2.2MB/s|R002-260618 [804be636e16d]
+  port: 4443
+  server: 83.172.143.53
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇱🇹LT_6|2.2MB/s|K001-260618 [897aab3ca454]
+  password: None
+  port: 443
+  server: 89.124.11.9
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: 🇫🇷FR_94|2.2MB/s|M003-260806 [d1572a059e05]
+  client-fingerprint: chrome
+  network: ws
+  port: 2087
+  server: saas.sin.fan
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  ws-opts:
+    headers:
+      Host: vp2.1145678.xyz
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+    path: /out
+  xudp: true
+  packet-encoding: xudp
+  servername: vp2.1145678.xyz
+- name: 🇫🇷FR_65|2.2MB/s|M003-260806 [edbced6cd83d]
+  alterId: '0'
+  cipher: auto
+  network: tcp
+  port: 1270
+  server: 79.137.99.183
+  skip-cert-verify: false
+  sub_tag: M003-260806
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  packet-encoding: xudp
+  servername: xmfhlpy.com
+- name: 🇫🇷FR_4|2.1MB/s|R002-260618
+  port: 443
+  server: 149.102.245.65
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇸🇬SG_1|2.1MB/s
+  port: 5555
+  server: 103.248.228.166
+  type: socks5
+- name: 🇫🇮FI_19|2.1MB/s|M003-260806 [1d3bb5168c20]
+  cipher: chacha20-ietf-poly1305
+  password: 6VxfNRMfOHIXLlOz_l46Efr0zIZoH2-K
+  port: 53731
+  server: fn1s.sublinkplas.ir
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- name: 🇫🇷FR_110|2.1MB/s|B007-260618 [486c14c6fbb2]
+  encryption: none
+  network: ws
+  port: 20049
+  server: 147.135.213.72
+  sub_tag: B007-260618
+  type: vless
+  udp: true
+  uuid: 03033cd9-817d-486d-bb3b-37d92b8346f0
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36
+    path: /vless-ws
+  xudp: true
+  packet-encoding: xudp
+- name: 🇫🇷FR_130|2.1MB/s|M003-260806 [517e2b74188d]
+  client-fingerprint: firefox
+  network: ws
+  port: 443
+  server: 154.197.64.252
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9f3d27a0-df9a-468d-9889-5dcdcccea6f3
+  ws-opts:
+    headers:
+      Host: worker3.daticah6555.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: worker3.daticah6555.workers.dev
+- name: 🇸🇪SE_15|2.1MB/s|M003-260806 [608f3537850e]
+  encryption: mlkem768x25519plus.native.0rtt.beTW_jdNvFQVpegzyf_foGfgRBsHkf7VrtnC14NTe1s
+  network: ws
+  port: 443
+  server: sajed.kdns.fr
+  sub_tag: M003-260806
+  type: vless
+  udp: true
+  uuid: cffa0e31-7cce-4541-8a2e-4e115873090b
+  ws-opts:
+    headers:
+      Host: sajed.kdns.fr
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36
+    path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
+  xudp: true
+  packet-encoding: xudp
+- name: 🇱🇺LU_3|2.1MB/s|B007-260618 [a210e7169f87]
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  network: ws
+  password: 4mq9w5ckqw3ewbdg
+  port: 16200
+  server: staticxfastline.taymaztest.ir
+  skip-cert-verify: false
+  sni: staticxfastline.taymaztest.ir
+  sub_tag: B007-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /biyasd
+- name: 🇷🇴RO_99|2.1MB/s|R002-260618 [b13737a97166]
+  port: 9002
+  server: 193.176.84.18
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇫🇷FR_122|2.1MB/s|S004-260618 [ed3ff7eec6df]
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 83.243.86.129
+  sub_tag: S004-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5dca5180-7c50-4b91-b21c-be8bfc769141
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /ws-89a4f2
+  xudp: true
+  packet-encoding: xudp
+  servername: fr6.sky-vault.top
+- name: 🇱🇻LV_17|2.0MB/s|X001-260618 [2f1a41cf7870]
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
+  port: 9082
+  server: 185.135.86.175
+  sub_tag: X001-260618
+  type: ss
+  udp: true
+- name: 🇷🇴RO_98|2.0MB/s|R002-260618 [5514b87d8d42]
+  password: None
+  port: 9002
+  server: 193.176.84.33
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇩🇪DE_144|2.0MB/s|B007-260618 [5fc8d0a0528d]
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: o685y.save-node.com
+  sub_tag: B007-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
+  ws-opts:
+    headers:
+      Host: o685y.save-node.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
+  xudp: true
+  packet-encoding: xudp
+  servername: o685y.save-node.com
+- name: 🇱🇹LT_7|2.0MB/s|A004-260618 [6fbcb073e15b]
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+  port: 9086
+  server: 195.238.126.20
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 🇷🇴RO_94|2.0MB/s|R002-260618 [89c9a614ae47]
+  password: 'null'
+  port: 9002
+  server: 193.176.84.17
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇩🇪DE_176|2.0MB/s|M003-260806 [92b73fc74c55]
+  client-fingerprint: chrome
+  encryption: none
+  network: xhttp
+  port: 443
+  server: 114.129.43.105
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc99c57d-6c93-4031-9153-73f510636533
+  xhttp-opts:
+    host: mama120.baklajann.ru
+    mode: auto
+    path: /
+    reuse-settings:
+      c-max-reuse-times: '0'
+      h-keep-alive-period: 0
+      h-max-request-times: 600-900
+      h-max-reusable-secs: 1800-3000
+      max-concurrency: '0'
+      max-connections: '4'
+  xudp: true
+  packet-encoding: xudp
+  servername: mama120.baklajann.ru
+- name: 🇺🇸US_657|2.0MB/s|A004-260618 [ab352702b08b]
+  cipher: aes-128-gcm
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.243
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 🇵🇱PL_13|2.0MB/s|A004-260618 [b255ee9ad386]
+  cipher: aes-256-cfb
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  server: 217.30.10.44
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 🇱🇹LT_10|2.0MB/s|A004-260618 [d1c324e2622e]
+  cipher: aes-256-cfb
+  password: JCJpbRbQZNw9XFZG
+  port: 9078
+  server: 195.238.126.20
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 🇹🇼TW_1|1.9MB/s
+  password: 2902c46c8493
+  port: 443
+  server: er8u54dh.df6h451rh.xin
+  skip-cert-verify: true
+  sni: px.ads.linkedin.com
+  type: anytls
+- name: 🇺🇸US_640|1.9MB/s [0940c1208f74]
+  cipher: aes-128-gcm
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.160
+  type: ss
+  udp: true
+- name: 🇧🇬BG_9|1.9MB/s|A004-260618 [19fba271d84f]
+  cipher: aes-256-cfb
+  password: 9eeJ2fwnZA5Fxgz8
+  port: 9028
+  server: 213.183.63.60
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 🇺🇸US_656|1.9MB/s|A004-260618 [40dfa7ea8e05]
+  cipher: aes-128-gcm
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.236
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 🇩🇪DE_178|1.9MB/s|M003-260806 [de8f22ae6e15]
+  client-fingerprint: firefox
+  encryption: none
+  network: ws
+  port: 2096
+  server: 144.31.215.231
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
+  ws-opts:
+    headers:
+      Host: st71404.rumedia-cdn.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36
+    path: /cdn/v3/live
+  xudp: true
+  packet-encoding: xudp
+  servername: st71404.rumedia-cdn.com
+- name: 🇩🇪DE_182|1.9MB/s|M003-260806 [dfecd9c0ca2a]
+  alpn:
+  - http/1.1
+  network: ws
+  port: 443
+  server: 188.114.98.0
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
+  ws-opts:
+    headers:
+      Host: o685y.save-node.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36
+    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
+  xudp: true
+  packet-encoding: xudp
+  servername: o685y.save-node.com
+- name: 🇷🇴RO_96|1.8MB/s [1174d8efe1df]
+  port: 9002
+  server: 193.176.84.22
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_505|1.8MB/s|B007-260618 [719341a104ed]
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 193.151.163.18
+  sub_tag: B007-260618
+  type: ss
+  udp: true
+- name: 🇫🇷FR_109|1.8MB/s|B007-260618 [8949f4cefae3]
+  encryption: none
+  network: ws
+  port: 20089
+  server: 147.135.213.72
+  sub_tag: B007-260618
+  type: vless
+  udp: true
+  uuid: 2dd94f74-6010-49a8-90ca-6a3f511ec0fa
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36
+    path: /vless-ws
+  xudp: true
+  packet-encoding: xudp
+- name: 🇩🇪DE_108|1.8MB/s|R002-260618 [bd90fe996d42]
+  password: None
+  port: 443
+  server: 149.36.50.157
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇩🇪DE_104|1.8MB/s|R002-260618 [ff2fb2f0667e]
+  port: 443
+  server: 149.36.50.129
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:8e4e:939b:b987:39aa:c46c/128
+  mtu: 1280
+  name: 🇨🇳CN_1|1.7MB/s
+  port: 8742
+  private-key: OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  reserved:
+  - 0
+  - 0
+  - 0
+  server: 8.6.112.207
+  type: wireguard
+  udp: true
+- ip: 172.16.0.2/32
+  keepalive: '5'
+  mtu: 1280
+  name: ❓Other_2|1.7MB/s
+  persistent-keepalive: '5'
+  port: 2408
+  private-key: QA9tXp3mpp1GVAmE1wF/KAI4vT/pj6QaLaY4Lt1sXV0=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  reserved:
+  - 149
+  - 115
+  - 173
+  server: 162.159.192.5
+  type: wireguard
+  udp: true
+  wnoise: quic
+  wnoisecount: '5'
+  wnoisedelay: '5'
+  wpayloadsize: 40-90
+- name: 🇫🇷FR_6|1.7MB/s
+  port: 3128
+  server: 54.36.150.233
+  skip-cert-verify: true
+  type: http
+- name: 🇵🇱PL_15|1.7MB/s|A004-260618 [147183be093b]
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 217.30.10.44
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 🇬🇧GB_17|1.7MB/s|R002-260618 [2af59194cbc1]
+  port: 443
+  server: 185.164.138.156
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇩🇪DE_184|1.7MB/s|M003-260806 [903a8dd45b82]
+  client-fingerprint: firefox
+  encryption: none
+  network: ws
+  port: 2096
+  server: 144.31.215.223
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
+  ws-opts:
+    headers:
+      Host: stac1f5.rumedia-cdn.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: /cdn/v3/live
+  xudp: true
+  packet-encoding: xudp
+  servername: stac1f5.rumedia-cdn.com
+- name: 🇺🇸US_651|1.7MB/s|K001-260618 [9a6932786333]
+  alterId: '0'
+  cipher: auto
+  network: tcp
+  port: 1270
+  server: 38.91.100.69
+  skip-cert-verify: false
+  sub_tag: K001-260618
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  packet-encoding: xudp
+  servername: xmfhlpy.com
+- name: 🇺🇸US_653|1.7MB/s|M003-260806 [b43658395d77]
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  port: 8388
+  server: 135.148.42.13
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- name: 🇺🇸US_654|1.7MB/s|M003-260806 [d6871fba2038]
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  port: 8388
+  server: 200.102.179.179
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- name: 🇩🇪DE_110|1.7MB/s|M003-260806 [e440fa25f061]
+  encryption: none
+  network: ws
+  port: 80
+  server: OV-Germany1.09vpn.com
+  sub_tag: M003-260806
+  type: vless
+  udp: true
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  ws-opts:
+    headers:
+      Host: OV-Germany1.09vpn.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /vless/
+  xudp: true
+  packet-encoding: xudp
+- name: 🇺🇦UA_2|1.7MB/s|S004-260618 [e97094c356ab]
+  client-fingerprint: chrome
+  network: xhttp
+  port: 443
+  server: render.com
+  sub_tag: S004-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 97be5ac0-dae3-43c1-aae8-3fcb7b130c59
+  xhttp-opts:
+    host: Org-ukrn-soeiwhdhshal-bssutudhdahuahese-beqhjdwter.maniyadg7shard.ir
+    mode: stream-one
+  xudp: true
+  packet-encoding: xudp
+  servername: Org-ukrn-soeiwhdhshal-bssutudhdahuahese-beqhjdwter.maniyadg7shard.ir
+- name: 🇷🇴RO_85|1.6MB/s|R002-260618 [0a23683cba9b]
+  password: None
+  port: 9002
+  server: 193.176.84.22
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇩🇪DE_119|1.6MB/s|B007-260618 [1f82b6bffd55]
+  client-fingerprint: chrome
+  encryption: none
+  network: xhttp
+  port: 4443
+  server: 179.253.80.175
+  sub_tag: B007-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  xhttp-opts:
+    path: /api/v1/sync/
+  xudp: true
+  packet-encoding: xudp
+  servername: swo2.nexfile.net
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ✅ 实测稳定
+  - ⚡ 源测速达标
+  - 🛜 hy2/WG存活筛选
+  - 🌐 全部节点
+- name: ✅ 实测稳定
+  type: select
+  proxies:
+  - 🇫🇷FR_140|706KB/s|C002-260622 [6f275700373d]
+  - 🇺🇸US_272|1.7MB/s|M003-260806 [0f851a6a1744]
+  - 🇮🇹IT意大利丨yoyapai.com (7)
+  - 🇳🇱NL_32|4.8MB/s|A004-260618 [d8fb37e5c506]
+  - ❓未知丨yoyapai.com (8)
+  - ❓未知丨yoyapai.com (17)
+  - ❓未知丨yoyapai.com (4)
+  - 🇩🇪DE_69|2.8MB/s|B007-260618 [1134b8e46720]
+  - 🇮🇹IT意大利丨yoyapai.com
+  - 🇮🇹IT意大利丨yoyapai.com (2)
+  - ❓未知丨yoyapai.com (18)
+  - ❓未知丨yoyapai.com (6)
+  - 🇳🇱NL_29|7.0MB/s|A004-260618 [0e3d0fb5ae4d]
+  - 🇸🇬SG_24|827KB/s|M003-260806 [4a280760256b]
+  - 🇺🇸US_170|820KB/s|R002-260618 [ffc0819f735f]
+  - 🇺🇸US_75|832KB/s|R002-260618 [fc73875d8c32]
+  - '@DeltaKroneckerGithub_547_IPV4'
+  - 🇨🇭CH_1|3.7MB/s
+  - 🇰🇷KR_1|4.1MB/s
+  - 🇺🇸US_115|849KB/s|R002-260618 [69ea03375d59]
+  - 🇺🇸US_86|771KB/s|P002-260618 [e1485bbbb7ea]
+  - 🇺🇸US_87|812KB/s|P002-260618 [d842677472af]
+  - 🇳🇱NL_80|6.7MB/s [faaf59d2e35f]
+  - 🇳🇱NL_65|4.6MB/s|R002-260618 [bcf20a2004d6]
+  - 🇨🇭CH_27|1005KB/s|P002-260618 [58b636345fb8]
+  - 🇳🇱NL_202|6.1MB/s|R002-260618 [6c371118d960]
+  - 🇫🇷FR_49|1.6MB/s|R002-260618 [11547d29f85c]
+  - 🇩🇪DE_79|4.4MB/s [eafd2408d13f]
+  - 🇷🇴RO_48|2.2MB/s|R002-260618 [16b7d44488cc]
+  - 🇳🇱NL_48|5.2MB/s|P002-260618 [6aa08aa36e29]
+  - 🇳🇱NL_92|5.5MB/s|R002-260618 [4251bc4d7d7f]
+  - 🇷🇴RO_8|1.4MB/s|P002-260618 [6afe02c1bfa7]
+  - 🇷🇴RO_71|1.9MB/s|R002-260618 [11354267ebab]
+  - 🇬🇷GR_1|865KB/s|R002-260618 [d9919f848d30]
+  - 🇮🇩ID_4|442KB/s|R002-260618 [6d6be7d79ea1]
+  - 🇸🇬SG_9|582KB/s|R002-260618 [89790aba7d69]
+- name: ⚡ 源测速达标
+  type: select
+  proxies:
+  - 🇳🇱NL_163|9.6MB/s|A004-260618 [5d74d658f7e7]
+  - 🇳🇱NL_186|8.8MB/s|T001-260618 [dbae37599e55]
+  - 🇳🇱NL_159|8.6MB/s [c001d81cd7c4]
+  - 🇳🇱NL_178|7.9MB/s|A004-260618 [f5ff2c49c095]
+  - 🇳🇱NL_244|7.7MB/s|M003-260806 [b615d1882ff6]
+  - 🇳🇱NL_237|7.5MB/s|A004-260618 [adfde9d80768]
+  - 🇳🇱NL_164|7.4MB/s|A004-260618 [5876974a2e32]
+  - 🇳🇱NL_158|7.2MB/s [f792f247b209]
+  - 🇳🇱NL_247|7.1MB/s|A003-260618 [4be821c0eec1]
+  - 🇬🇧GB_32|6.5MB/s|A003-260618 [749e60026aa3]
+  - 🇳🇱NL_243|6.4MB/s|M003-260806 [2fe75f59ed6d]
+  - 🇩🇪DE_161|6.4MB/s|M003-260806 [52f007f73007]
+  - 🇳🇱NL_184|6.4MB/s [6495f691978f]
+  - 🇳🇱NL_180|6.3MB/s|S004-260618 [08b0a3459590]
+  - 🇫🇷FR_121|6.2MB/s|M003-260806 [87135b4e7341]
+  - 🇫🇷FR_114|6.1MB/s|B007-260618 [c08d879c58ba]
+  - 🇩🇪DE_129|6.0MB/s [fe00298482c1]
+  - 🇩🇪DE_174|5.8MB/s|M003-260806 [6ca9357ccdaa]
+  - 🇬🇧GB_26|5.3MB/s|M003-260806 [c098ce6d60bc]
+  - 🇯🇵JP_2|5.2MB/s
+  - 🇫🇷FR_131|5.2MB/s|M003-260806 [38d58d240994]
+  - 🇮🇪IE_9|5.2MB/s|B007-260618 [b479ed40f709]
+  - 🇫🇷FR_132|5.1MB/s|M003-260806 [b089a30d23af]
+  - 🇩🇪DE_164|5.0MB/s|S001-260618 [036a98c673ba]
+  - 🇫🇷FR_135|5.0MB/s|M003-260806 [1bf76171adc3]
+  - 🇩🇪DE_95|4.8MB/s|M003-260806 [b3819e34c142]
+  - 🇳🇱NL_198|4.7MB/s|B007-260618 [6f5e01fd483e]
+  - 🇫🇷FR_134|4.6MB/s|M003-260806 [d116069d4b35]
+  - 🇳🇱NL_192|4.4MB/s|B007-260618 [0b935f0db5f6]
+  - 🇫🇷FR_133|4.4MB/s|M003-260806 [0dfc73d6ecdf]
+  - 🇫🇷FR_107|4.4MB/s|M003-260806 [c6a774e63131]
+  - 🇫🇷FR_84|4.3MB/s|M003-260806 [f67f51250ba6]
+  - 🇩🇪DE_177|4.1MB/s|M003-260806 [8919a4a33770]
+  - 🇳🇱NL_258|4.1MB/s|M003-260806 [9a396ef5b0b1]
+  - 🇫🇷FR_118|4.1MB/s|M003-260806 [b7a61aef36f0]
+  - 🇩🇪DE_128|3.9MB/s|R002-260618 [15e34f11142a]
+  - 🇪🇸ES_24|3.9MB/s|M001-260618 [c60aac1f3b8b]
+  - 🇩🇪DE_3|3.9MB/s
+  - 🇭🇰HK_3|3.8MB/s
+  - 🇫🇷FR_77|3.5MB/s|M003-260806 [4c3ddca66888]
+  - 🇫🇷FR_97|3.4MB/s|M003-260806 [f9792fc8fdb4]
+  - 🇭🇰HK_1|3.2MB/s
+  - 🇯🇵JP_3|3.2MB/s|P002-260618
+  - 🇫🇷FR_95|3.2MB/s|M003-260806 [4aaafff0fd6c]
+  - 🇫🇷FR_86|3.2MB/s|M003-260806 [6cf0955760dd]
+  - 🇦🇱AL_1|3.1MB/s|P002-260618
+  - 🇫🇷FR_90|3.1MB/s|A004-260618 [7379c3bd2913]
+  - 🇸🇬SG_2|3.0MB/s
+  - 🇮🇹IT_4|3.0MB/s
+  - 🇫🇷FR_73|3.0MB/s|B004-260618 [236989c90cd1]
+  - 🇫🇷FR_116|3.0MB/s|M003-260806 [36c755082643]
+  - 🇫🇷FR_139|3.0MB/s|C002-260622 [5724be86cb9d]
+  - 🇫🇷FR_5|2.9MB/s|R002-260618
+  - 🇯🇵JP_4|2.9MB/s
+  - 🇪🇸ES_22|2.9MB/s|M001-260618 [cec30611080c]
+  - 🇷🇴RO_2|2.8MB/s|K001-260618
+  - 🇫🇷FR_124|2.8MB/s|B007-260618 [0cf126f16bd9]
+  - 🇵🇱PL_21|2.8MB/s|B007-260618 [23d15896d913]
+  - 🇵🇱PL_22|2.8MB/s|M003-260806 [54e2a228308f]
+  - 🇵🇱PL_29|2.8MB/s|M003-260806 [b825854e415c]
+  - 🇵🇱PL_26|2.8MB/s|M003-260806 [f3cdca98680c]
+  - 🇪🇸ES_23|2.8MB/s|M001-260618 [f8c1cd6436c0]
+  - 🇩🇪DE_111|2.7MB/s|M003-260806 [2f25347662bf]
+  - 🇫🇷FR_128|2.7MB/s|M003-260806 [5a654cd983d7]
+  - 🇵🇱PL_19|2.7MB/s|M003-260806 [ea518a51213d]
+  - 🇩🇪DE_147|2.7MB/s|M003-260806 [f5abea73e712]
+  - 🇨🇴CO_1|2.6MB/s
+  - 🇫🇷FR_138|2.6MB/s|M003-260806 [09ad1489893e]
+  - 🇳🇱NL_204|2.6MB/s|R002-260618 [206e55a559c1]
+  - 🇳🇱NL_160|2.6MB/s [755ad3db773a]
+  - 🇷🇴RO_100|2.6MB/s|A003-260618 [7d91af588a4b]
+  - 🇫🇷FR_71|2.5MB/s|S004-260618 [337816d7bf16]
+  - 🇵🇱PL_28|2.5MB/s|M003-260806 [5facb19eb803]
+  - 🇵🇱PL_27|2.5MB/s|M003-260806 [ce5f8837819d]
+  - 🇩🇪DE_17|2.4MB/s
+  - 🇱🇹LT_8|2.4MB/s|R002-260618 [84576440cb72]
+  - 🇱🇹LT_9|2.4MB/s|C002-260622 [903b7eca0f0e]
+  - 🇨🇳CN_2|2.3MB/s
+  - 🇫🇷FR_93|2.3MB/s|M003-260806 [03be49038c69]
+  - 🇪🇸ES_26|2.3MB/s|M003-260806 [4f451682530d]
+  - 🇩🇪DE_13|2.2MB/s|R002-260618
+  - 🇺🇸US_13|2.2MB/s
+  - 🇨🇭CH_30|2.2MB/s|M003-260806 [52fd5871a5f1]
+  - 🇩🇪DE_179|2.2MB/s|M003-260806 [5699bd6a7b2b]
+  - 🇫🇷FR_66|2.2MB/s|R002-260618 [804be636e16d]
+  - 🇱🇹LT_6|2.2MB/s|K001-260618 [897aab3ca454]
+  - 🇫🇷FR_94|2.2MB/s|M003-260806 [d1572a059e05]
+  - 🇫🇷FR_65|2.2MB/s|M003-260806 [edbced6cd83d]
+  - 🇫🇷FR_4|2.1MB/s|R002-260618
+  - 🇸🇬SG_1|2.1MB/s
+  - 🇫🇮FI_19|2.1MB/s|M003-260806 [1d3bb5168c20]
+  - 🇫🇷FR_110|2.1MB/s|B007-260618 [486c14c6fbb2]
+  - 🇫🇷FR_130|2.1MB/s|M003-260806 [517e2b74188d]
+  - 🇸🇪SE_15|2.1MB/s|M003-260806 [608f3537850e]
+  - 🇱🇺LU_3|2.1MB/s|B007-260618 [a210e7169f87]
+  - 🇷🇴RO_99|2.1MB/s|R002-260618 [b13737a97166]
+  - 🇫🇷FR_122|2.1MB/s|S004-260618 [ed3ff7eec6df]
+  - 🇱🇻LV_17|2.0MB/s|X001-260618 [2f1a41cf7870]
+  - 🇷🇴RO_98|2.0MB/s|R002-260618 [5514b87d8d42]
+  - 🇩🇪DE_144|2.0MB/s|B007-260618 [5fc8d0a0528d]
+  - 🇱🇹LT_7|2.0MB/s|A004-260618 [6fbcb073e15b]
+  - 🇷🇴RO_94|2.0MB/s|R002-260618 [89c9a614ae47]
+  - 🇩🇪DE_176|2.0MB/s|M003-260806 [92b73fc74c55]
+  - 🇺🇸US_657|2.0MB/s|A004-260618 [ab352702b08b]
+  - 🇵🇱PL_13|2.0MB/s|A004-260618 [b255ee9ad386]
+  - 🇱🇹LT_10|2.0MB/s|A004-260618 [d1c324e2622e]
+  - 🇹🇼TW_1|1.9MB/s
+  - 🇺🇸US_640|1.9MB/s [0940c1208f74]
+  - 🇧🇬BG_9|1.9MB/s|A004-260618 [19fba271d84f]
+  - 🇺🇸US_656|1.9MB/s|A004-260618 [40dfa7ea8e05]
+  - 🇩🇪DE_178|1.9MB/s|M003-260806 [de8f22ae6e15]
+  - 🇩🇪DE_182|1.9MB/s|M003-260806 [dfecd9c0ca2a]
+  - 🇷🇴RO_96|1.8MB/s [1174d8efe1df]
+  - 🇺🇸US_505|1.8MB/s|B007-260618 [719341a104ed]
+  - 🇫🇷FR_109|1.8MB/s|B007-260618 [8949f4cefae3]
+  - 🇩🇪DE_108|1.8MB/s|R002-260618 [bd90fe996d42]
+  - 🇩🇪DE_104|1.8MB/s|R002-260618 [ff2fb2f0667e]
+  - 🇨🇳CN_1|1.7MB/s
+  - ❓Other_2|1.7MB/s
+  - 🇫🇷FR_6|1.7MB/s
+  - 🇵🇱PL_15|1.7MB/s|A004-260618 [147183be093b]
+  - 🇬🇧GB_17|1.7MB/s|R002-260618 [2af59194cbc1]
+  - 🇩🇪DE_184|1.7MB/s|M003-260806 [903a8dd45b82]
+  - 🇺🇸US_651|1.7MB/s|K001-260618 [9a6932786333]
+  - 🇺🇸US_653|1.7MB/s|M003-260806 [b43658395d77]
+  - 🇺🇸US_654|1.7MB/s|M003-260806 [d6871fba2038]
+  - 🇩🇪DE_110|1.7MB/s|M003-260806 [e440fa25f061]
+  - 🇺🇦UA_2|1.7MB/s|S004-260618 [e97094c356ab]
+  - 🇷🇴RO_85|1.6MB/s|R002-260618 [0a23683cba9b]
+  - 🇩🇪DE_119|1.6MB/s|B007-260618 [1f82b6bffd55]
+- name: 🛜 hy2/WG存活筛选
+  type: select
+  proxies: []
+- name: 🌐 全部节点
+  type: select
+  proxies:
+  - 🇫🇷FR_140|706KB/s|C002-260622 [6f275700373d]
+  - 🇺🇸US_272|1.7MB/s|M003-260806 [0f851a6a1744]
+  - 🇮🇹IT意大利丨yoyapai.com (7)
+  - 🇳🇱NL_32|4.8MB/s|A004-260618 [d8fb37e5c506]
+  - ❓未知丨yoyapai.com (8)
+  - ❓未知丨yoyapai.com (17)
+  - ❓未知丨yoyapai.com (4)
+  - 🇩🇪DE_69|2.8MB/s|B007-260618 [1134b8e46720]
+  - 🇮🇹IT意大利丨yoyapai.com
+  - 🇮🇹IT意大利丨yoyapai.com (2)
+  - ❓未知丨yoyapai.com (18)
+  - ❓未知丨yoyapai.com (6)
+  - 🇳🇱NL_29|7.0MB/s|A004-260618 [0e3d0fb5ae4d]
+  - 🇸🇬SG_24|827KB/s|M003-260806 [4a280760256b]
+  - 🇺🇸US_170|820KB/s|R002-260618 [ffc0819f735f]
+  - 🇺🇸US_75|832KB/s|R002-260618 [fc73875d8c32]
+  - '@DeltaKroneckerGithub_547_IPV4'
+  - 🇨🇭CH_1|3.7MB/s
+  - 🇰🇷KR_1|4.1MB/s
+  - 🇺🇸US_115|849KB/s|R002-260618 [69ea03375d59]
+  - 🇺🇸US_86|771KB/s|P002-260618 [e1485bbbb7ea]
+  - 🇺🇸US_87|812KB/s|P002-260618 [d842677472af]
+  - 🇳🇱NL_80|6.7MB/s [faaf59d2e35f]
+  - 🇳🇱NL_65|4.6MB/s|R002-260618 [bcf20a2004d6]
+  - 🇨🇭CH_27|1005KB/s|P002-260618 [58b636345fb8]
+  - 🇳🇱NL_202|6.1MB/s|R002-260618 [6c371118d960]
+  - 🇫🇷FR_49|1.6MB/s|R002-260618 [11547d29f85c]
+  - 🇩🇪DE_79|4.4MB/s [eafd2408d13f]
+  - 🇷🇴RO_48|2.2MB/s|R002-260618 [16b7d44488cc]
+  - 🇳🇱NL_48|5.2MB/s|P002-260618 [6aa08aa36e29]
+  - 🇳🇱NL_92|5.5MB/s|R002-260618 [4251bc4d7d7f]
+  - 🇷🇴RO_8|1.4MB/s|P002-260618 [6afe02c1bfa7]
+  - 🇷🇴RO_71|1.9MB/s|R002-260618 [11354267ebab]
+  - 🇬🇷GR_1|865KB/s|R002-260618 [d9919f848d30]
+  - 🇮🇩ID_4|442KB/s|R002-260618 [6d6be7d79ea1]
+  - 🇸🇬SG_9|582KB/s|R002-260618 [89790aba7d69]
+  - 🇳🇱NL_163|9.6MB/s|A004-260618 [5d74d658f7e7]
+  - 🇳🇱NL_186|8.8MB/s|T001-260618 [dbae37599e55]
+  - 🇳🇱NL_159|8.6MB/s [c001d81cd7c4]
+  - 🇳🇱NL_178|7.9MB/s|A004-260618 [f5ff2c49c095]
+  - 🇳🇱NL_244|7.7MB/s|M003-260806 [b615d1882ff6]
+  - 🇳🇱NL_237|7.5MB/s|A004-260618 [adfde9d80768]
+  - 🇳🇱NL_164|7.4MB/s|A004-260618 [5876974a2e32]
+  - 🇳🇱NL_158|7.2MB/s [f792f247b209]
+  - 🇳🇱NL_247|7.1MB/s|A003-260618 [4be821c0eec1]
+  - 🇬🇧GB_32|6.5MB/s|A003-260618 [749e60026aa3]
+  - 🇳🇱NL_243|6.4MB/s|M003-260806 [2fe75f59ed6d]
+  - 🇩🇪DE_161|6.4MB/s|M003-260806 [52f007f73007]
+  - 🇳🇱NL_184|6.4MB/s [6495f691978f]
+  - 🇳🇱NL_180|6.3MB/s|S004-260618 [08b0a3459590]
+  - 🇫🇷FR_121|6.2MB/s|M003-260806 [87135b4e7341]
+  - 🇫🇷FR_114|6.1MB/s|B007-260618 [c08d879c58ba]
+  - 🇩🇪DE_129|6.0MB/s [fe00298482c1]
+  - 🇩🇪DE_174|5.8MB/s|M003-260806 [6ca9357ccdaa]
+  - 🇬🇧GB_26|5.3MB/s|M003-260806 [c098ce6d60bc]
+  - 🇯🇵JP_2|5.2MB/s
+  - 🇫🇷FR_131|5.2MB/s|M003-260806 [38d58d240994]
+  - 🇮🇪IE_9|5.2MB/s|B007-260618 [b479ed40f709]
+  - 🇫🇷FR_132|5.1MB/s|M003-260806 [b089a30d23af]
+  - 🇩🇪DE_164|5.0MB/s|S001-260618 [036a98c673ba]
+  - 🇫🇷FR_135|5.0MB/s|M003-260806 [1bf76171adc3]
+  - 🇩🇪DE_95|4.8MB/s|M003-260806 [b3819e34c142]
+  - 🇳🇱NL_198|4.7MB/s|B007-260618 [6f5e01fd483e]
+  - 🇫🇷FR_134|4.6MB/s|M003-260806 [d116069d4b35]
+  - 🇳🇱NL_192|4.4MB/s|B007-260618 [0b935f0db5f6]
+  - 🇫🇷FR_133|4.4MB/s|M003-260806 [0dfc73d6ecdf]
+  - 🇫🇷FR_107|4.4MB/s|M003-260806 [c6a774e63131]
+  - 🇫🇷FR_84|4.3MB/s|M003-260806 [f67f51250ba6]
+  - 🇩🇪DE_177|4.1MB/s|M003-260806 [8919a4a33770]
+  - 🇳🇱NL_258|4.1MB/s|M003-260806 [9a396ef5b0b1]
+  - 🇫🇷FR_118|4.1MB/s|M003-260806 [b7a61aef36f0]
+  - 🇩🇪DE_128|3.9MB/s|R002-260618 [15e34f11142a]
+  - 🇪🇸ES_24|3.9MB/s|M001-260618 [c60aac1f3b8b]
+  - 🇩🇪DE_3|3.9MB/s
+  - 🇭🇰HK_3|3.8MB/s
+  - 🇫🇷FR_77|3.5MB/s|M003-260806 [4c3ddca66888]
+  - 🇫🇷FR_97|3.4MB/s|M003-260806 [f9792fc8fdb4]
+  - 🇭🇰HK_1|3.2MB/s
+  - 🇯🇵JP_3|3.2MB/s|P002-260618
+  - 🇫🇷FR_95|3.2MB/s|M003-260806 [4aaafff0fd6c]
+  - 🇫🇷FR_86|3.2MB/s|M003-260806 [6cf0955760dd]
+  - 🇦🇱AL_1|3.1MB/s|P002-260618
+  - 🇫🇷FR_90|3.1MB/s|A004-260618 [7379c3bd2913]
+  - 🇸🇬SG_2|3.0MB/s
+  - 🇮🇹IT_4|3.0MB/s
+  - 🇫🇷FR_73|3.0MB/s|B004-260618 [236989c90cd1]
+  - 🇫🇷FR_116|3.0MB/s|M003-260806 [36c755082643]
+  - 🇫🇷FR_139|3.0MB/s|C002-260622 [5724be86cb9d]
+  - 🇫🇷FR_5|2.9MB/s|R002-260618
+  - 🇯🇵JP_4|2.9MB/s
+  - 🇪🇸ES_22|2.9MB/s|M001-260618 [cec30611080c]
+  - 🇷🇴RO_2|2.8MB/s|K001-260618
+  - 🇫🇷FR_124|2.8MB/s|B007-260618 [0cf126f16bd9]
+  - 🇵🇱PL_21|2.8MB/s|B007-260618 [23d15896d913]
+  - 🇵🇱PL_22|2.8MB/s|M003-260806 [54e2a228308f]
+  - 🇵🇱PL_29|2.8MB/s|M003-260806 [b825854e415c]
+  - 🇵🇱PL_26|2.8MB/s|M003-260806 [f3cdca98680c]
+  - 🇪🇸ES_23|2.8MB/s|M001-260618 [f8c1cd6436c0]
+  - 🇩🇪DE_111|2.7MB/s|M003-260806 [2f25347662bf]
+  - 🇫🇷FR_128|2.7MB/s|M003-260806 [5a654cd983d7]
+  - 🇵🇱PL_19|2.7MB/s|M003-260806 [ea518a51213d]
+  - 🇩🇪DE_147|2.7MB/s|M003-260806 [f5abea73e712]
+  - 🇨🇴CO_1|2.6MB/s
+  - 🇫🇷FR_138|2.6MB/s|M003-260806 [09ad1489893e]
+  - 🇳🇱NL_204|2.6MB/s|R002-260618 [206e55a559c1]
+  - 🇳🇱NL_160|2.6MB/s [755ad3db773a]
+  - 🇷🇴RO_100|2.6MB/s|A003-260618 [7d91af588a4b]
+  - 🇫🇷FR_71|2.5MB/s|S004-260618 [337816d7bf16]
+  - 🇵🇱PL_28|2.5MB/s|M003-260806 [5facb19eb803]
+  - 🇵🇱PL_27|2.5MB/s|M003-260806 [ce5f8837819d]
+  - 🇩🇪DE_17|2.4MB/s
+  - 🇱🇹LT_8|2.4MB/s|R002-260618 [84576440cb72]
+  - 🇱🇹LT_9|2.4MB/s|C002-260622 [903b7eca0f0e]
+  - 🇨🇳CN_2|2.3MB/s
+  - 🇫🇷FR_93|2.3MB/s|M003-260806 [03be49038c69]
+  - 🇪🇸ES_26|2.3MB/s|M003-260806 [4f451682530d]
+  - 🇩🇪DE_13|2.2MB/s|R002-260618
+  - 🇺🇸US_13|2.2MB/s
+  - 🇨🇭CH_30|2.2MB/s|M003-260806 [52fd5871a5f1]
+  - 🇩🇪DE_179|2.2MB/s|M003-260806 [5699bd6a7b2b]
+  - 🇫🇷FR_66|2.2MB/s|R002-260618 [804be636e16d]
+  - 🇱🇹LT_6|2.2MB/s|K001-260618 [897aab3ca454]
+  - 🇫🇷FR_94|2.2MB/s|M003-260806 [d1572a059e05]
+  - 🇫🇷FR_65|2.2MB/s|M003-260806 [edbced6cd83d]
+  - 🇫🇷FR_4|2.1MB/s|R002-260618
+  - 🇸🇬SG_1|2.1MB/s
+  - 🇫🇮FI_19|2.1MB/s|M003-260806 [1d3bb5168c20]
+  - 🇫🇷FR_110|2.1MB/s|B007-260618 [486c14c6fbb2]
+  - 🇫🇷FR_130|2.1MB/s|M003-260806 [517e2b74188d]
+  - 🇸🇪SE_15|2.1MB/s|M003-260806 [608f3537850e]
+  - 🇱🇺LU_3|2.1MB/s|B007-260618 [a210e7169f87]
+  - 🇷🇴RO_99|2.1MB/s|R002-260618 [b13737a97166]
+  - 🇫🇷FR_122|2.1MB/s|S004-260618 [ed3ff7eec6df]
+  - 🇱🇻LV_17|2.0MB/s|X001-260618 [2f1a41cf7870]
+  - 🇷🇴RO_98|2.0MB/s|R002-260618 [5514b87d8d42]
+  - 🇩🇪DE_144|2.0MB/s|B007-260618 [5fc8d0a0528d]
+  - 🇱🇹LT_7|2.0MB/s|A004-260618 [6fbcb073e15b]
+  - 🇷🇴RO_94|2.0MB/s|R002-260618 [89c9a614ae47]
+  - 🇩🇪DE_176|2.0MB/s|M003-260806 [92b73fc74c55]
+  - 🇺🇸US_657|2.0MB/s|A004-260618 [ab352702b08b]
+  - 🇵🇱PL_13|2.0MB/s|A004-260618 [b255ee9ad386]
+  - 🇱🇹LT_10|2.0MB/s|A004-260618 [d1c324e2622e]
+  - 🇹🇼TW_1|1.9MB/s
+  - 🇺🇸US_640|1.9MB/s [0940c1208f74]
+  - 🇧🇬BG_9|1.9MB/s|A004-260618 [19fba271d84f]
+  - 🇺🇸US_656|1.9MB/s|A004-260618 [40dfa7ea8e05]
+  - 🇩🇪DE_178|1.9MB/s|M003-260806 [de8f22ae6e15]
+  - 🇩🇪DE_182|1.9MB/s|M003-260806 [dfecd9c0ca2a]
+  - 🇷🇴RO_96|1.8MB/s [1174d8efe1df]
+  - 🇺🇸US_505|1.8MB/s|B007-260618 [719341a104ed]
+  - 🇫🇷FR_109|1.8MB/s|B007-260618 [8949f4cefae3]
+  - 🇩🇪DE_108|1.8MB/s|R002-260618 [bd90fe996d42]
+  - 🇩🇪DE_104|1.8MB/s|R002-260618 [ff2fb2f0667e]
+  - 🇨🇳CN_1|1.7MB/s
+  - ❓Other_2|1.7MB/s
+  - 🇫🇷FR_6|1.7MB/s
+  - 🇵🇱PL_15|1.7MB/s|A004-260618 [147183be093b]
+  - 🇬🇧GB_17|1.7MB/s|R002-260618 [2af59194cbc1]
+  - 🇩🇪DE_184|1.7MB/s|M003-260806 [903a8dd45b82]
+  - 🇺🇸US_651|1.7MB/s|K001-260618 [9a6932786333]
+  - 🇺🇸US_653|1.7MB/s|M003-260806 [b43658395d77]
+  - 🇺🇸US_654|1.7MB/s|M003-260806 [d6871fba2038]
+  - 🇩🇪DE_110|1.7MB/s|M003-260806 [e440fa25f061]
+  - 🇺🇦UA_2|1.7MB/s|S004-260618 [e97094c356ab]
+  - 🇷🇴RO_85|1.6MB/s|R002-260618 [0a23683cba9b]
+  - 🇩🇪DE_119|1.6MB/s|B007-260618 [1f82b6bffd55]
+rules:
+- MATCH,🚀 节点选择

@@ -1,4 +1,4 @@
-# 每日维护订阅 | 2026-11-25 | 共 311 个: 实测稳定 110 + 源测速达标 130 + hy2/WG存活 71
+# 每日维护订阅 | 2026-11-26 | 共 315 个: 实测稳定 114 + 源测速达标 130 + hy2/WG存活 71
 # 实测稳定 = 本地测速点连测3轮全部有响应(忽通忽断已删); 延迟在本测速点测得, 与你本地客户端数值不同
 mixed-port: 7890
 allow-lan: false
@@ -61,24 +61,58 @@ proxies:
   xudp: true
   packet-encoding: xudp
   servername: jLDmwA9CfRug7b03Cr1vs.paGes.DEV
-- name: 🇺🇸US_59|174KB/s [60b18e513b09]
-  cipher: aes-128-gcm
-  password: shadowsocks
+- type: vless
+  name: 🇭🇰HK香港節點丨yoyapai.com_2
+  server: 91.193.58.93
   port: 443
-  server: 156.146.38.168
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  servername: jamph131-1228.pages.dev
+  sni: jamph131-1228.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- type: vless
+  name: 🇭🇰HK香港節點丨yoyapai.com
+  server: 91.193.58.141
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  servername: jamph131-1228.pages.dev
+  sni: jamph131-1228.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- type: vless
+  name: 🇭🇰HK香港節點丨yoyapai.com (2)
+  server: 91.193.58.117
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  servername: jamph131-1228.pages.dev
+  sni: jamph131-1228.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇺🇸US_2|1.3MB/s [b3491eae71bd]
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.199.42.68
   type: ss
   udp: true
-- name: 🇺🇸US_272|1.7MB/s|M003-260806 [0f851a6a1744]
-  client-fingerprint: chrome
-  password: nwilryafgkyvuxauc8pz
-  port: 50875
-  server: 69.164.240.85
-  skip-cert-verify: true
-  sni: 69.164.240.85
-  sub_tag: M003-260806
-  type: trojan
-  udp: true
-  network: tcp
 - name: 🇺🇸US_468|928KB/s|K001-260618 [5708f18d59b1]
   alterId: '0'
   cipher: auto
@@ -94,13 +128,16 @@ proxies:
   xudp: true
   packet-encoding: xudp
   servername: xmfhlpy.com
-- name: 🇺🇸US_2|1.3MB/s [b3491eae71bd]
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 138.199.42.68
-  type: ss
+- type: trojan
+  name: 🇨🇦_加拿大 (2)
+  server: leviko-ca6908.shopingggg.ir
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
+  tls: true
+  servername: blog.connectingpeoplewithgreatjobs.com
+  sni: blog.connectingpeoplewithgreatjobs.com
+  skip-cert-verify: true
 - name: 🇺🇸US_511|972KB/s|A004-260618 [3d3e162aa83d]
   client-fingerprint: chrome
   network: tcp
@@ -120,6 +157,156 @@ proxies:
   sub_tag: M003-260806
   type: ss
   udp: true
+- name: 🇳🇱NL_53|5.8MB/s|A003-260618 [cb6ae96da10d]
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.217
+  sub_tag: A003-260618
+  type: ss
+  udp: true
+- name: 🇳🇱NL_32|4.8MB/s|A004-260618 [d8fb37e5c506]
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.165
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 🇩🇪DE_66|5.9MB/s|M003-260806 [68341a0cc2e8]
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 57.129.76.233
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- name: 🇳🇱NL_160|2.6MB/s [755ad3db773a]
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.180
+  type: ss
+  udp: true
+- name: 🇺🇸US_272|1.7MB/s|M003-260806 [0f851a6a1744]
+  client-fingerprint: chrome
+  password: nwilryafgkyvuxauc8pz
+  port: 50875
+  server: 69.164.240.85
+  skip-cert-verify: true
+  sni: 69.164.240.85
+  sub_tag: M003-260806
+  type: trojan
+  udp: true
+  network: tcp
+- type: ss
+  name: ❓未知丨yoyapai.com (4)
+  server: 202.50.253.72
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇳🇱NL_29|7.0MB/s|A004-260618 [0e3d0fb5ae4d]
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.178
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 🇬🇧GB_27|84KB/s|A004-260618 [70c7619e3093]
+  cipher: aes-128-gcm
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.181
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- type: ss
+  name: ❓未知丨yoyapai.com (17)
+  server: 202.50.253.99
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇧🇷BR_6|678KB/s|S004-260618 [2afd52a37d62]
+  alterId: '0'
+  cipher: auto
+  network: tcp
+  port: 1270
+  server: 103.14.27.207
+  skip-cert-verify: false
+  sub_tag: S004-260618
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  packet-encoding: xudp
+  servername: xmfhlpy.com
+- type: ss
+  name: 🇮🇹IT意大利丨yoyapai.com (7)
+  server: 202.50.253.63
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇩🇪DE_69|2.8MB/s|B007-260618 [1134b8e46720]
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  network: tcp
+  port: 1270
+  server: 185.177.229.95
+  sub_tag: B007-260618
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  xudp: true
+  packet-encoding: xudp
+  servername: xmfhlpy.com
+- name: 🇪🇸ES_2|2.6MB/s|M003-260806 [f6618bfd7595]
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 62.93.179.117
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- type: ss
+  name: ❓未知丨yoyapai.com (8)
+  server: 202.50.253.18
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: ❓未知丨yoyapai.com (5)
+  server: 202.50.253.45
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: ❓未知丨yoyapai.com (6)
+  server: 202.50.253.27
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
 - type: vmess
   name: '@DeltaKroneckerGithub_3021_IPV4'
   server: 172.64.145.93
@@ -136,6 +323,23 @@ proxies:
     headers:
       Host: guanwang.awsno.com
 - type: ss
+  name: ❓未知丨yoyapai.com (18)
+  server: 202.50.253.36
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇧🇬BG_4|277KB/s|A004-260618 [67e57f79a756]
+  cipher: aes-256-cfb
+  password: PRBf4BS2HvJqtWxY
+  port: 9049
+  server: 213.183.63.60
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- type: ss
   name: 🇮🇹IT意大利丨yoyapai.com
   server: 202.50.253.81
   port: 19999
@@ -145,68 +349,22 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇮🇹IT意大利丨yoyapai.com (7)
-  server: 202.50.253.63
+  name: 🇮🇹IT意大利丨yoyapai.com (3)
+  server: 202.50.253.90
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
   udp: true
   tls: false
   skip-cert-verify: false
-- type: ss
-  name: ❓未知丨yoyapai.com (8)
-  server: 202.50.253.18
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: ❓未知丨yoyapai.com (4)
-  server: 202.50.253.72
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇳🇱NL_32|4.8MB/s|A004-260618 [d8fb37e5c506]
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 443
-  server: 82.38.31.165
+- name: 🇱🇹LT_7|2.0MB/s|A004-260618 [6fbcb073e15b]
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+  port: 9086
+  server: 195.238.126.20
   sub_tag: A004-260618
   type: ss
   udp: true
-- type: ss
-  name: ❓未知丨yoyapai.com (18)
-  server: 202.50.253.36
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇬🇧GB_26|5.3MB/s|M003-260806 [c098ce6d60bc]
-  alterId: 0
-  cipher: auto
-  network: ws
-  port: 80
-  server: 57.129.132.223
-  skip-cert-verify: false
-  sub_tag: M003-260806
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  ws-opts:
-    headers:
-      Host: google.com
-    path: /vmess/
-  xudp: true
-  packet-encoding: xudp
-  servername: google.com
 - type: ss
   name: 🇮🇹IT意大利丨yoyapai.com (2)
   server: 202.50.253.54
@@ -216,150 +374,23 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇪🇸ES_2|2.6MB/s|M003-260806 [f6618bfd7595]
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 62.93.179.117
-  sub_tag: M003-260806
-  type: ss
-  udp: true
-- name: 🇳🇱NL_53|5.8MB/s|A003-260618 [cb6ae96da10d]
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.217
-  sub_tag: A003-260618
-  type: ss
-  udp: true
 - type: ss
-  name: 🇮🇹IT意大利丨yoyapai.com (3)
-  server: 202.50.253.90
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇳🇱NL_160|2.6MB/s [755ad3db773a]
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.180
-  type: ss
-  udp: true
-- type: ss
-  name: ❓未知丨yoyapai.com (5)
-  server: 202.50.253.45
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇳🇱NL_29|7.0MB/s|A004-260618 [0e3d0fb5ae4d]
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.178
-  sub_tag: A004-260618
-  type: ss
-  udp: true
-- name: 🇩🇪DE_66|5.9MB/s|M003-260806 [68341a0cc2e8]
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 57.129.76.233
-  sub_tag: M003-260806
-  type: ss
-  udp: true
-- type: ss
-  name: ❓未知丨yoyapai.com (17)
-  server: 202.50.253.99
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: ❓未知丨yoyapai.com (6)
-  server: 202.50.253.27
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇬🇧GB_27|84KB/s|A004-260618 [70c7619e3093]
-  cipher: aes-128-gcm
+  name: 🇳🇱_荷兰 (4)
+  server: leviko-nl6763.shopingggg.ir
+  port: 443
   password: shadowsocks
-  port: 443
-  server: 141.98.101.181
-  sub_tag: A004-260618
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬SG_24|827KB/s|M003-260806 [4a280760256b]
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 149.88.106.73
+  sub_tag: M003-260806
   type: ss
   udp: true
-- name: 🇩🇪DE_69|2.8MB/s|B007-260618 [1134b8e46720]
-  alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  network: tcp
-  port: 1270
-  server: 185.177.229.95
-  sub_tag: B007-260618
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  xudp: true
-  packet-encoding: xudp
-  servername: xmfhlpy.com
-- name: 🇱🇹LT_7|2.0MB/s|A004-260618 [6fbcb073e15b]
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-  port: 9086
-  server: 195.238.126.20
-  sub_tag: A004-260618
-  type: ss
-  udp: true
-- name: 🇧🇬BG_4|277KB/s|A004-260618 [67e57f79a756]
-  cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
-  port: 9049
-  server: 213.183.63.60
-  sub_tag: A004-260618
-  type: ss
-  udp: true
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
-  name: 🇷🇺 俄罗斯 | RUS 2
-  network: grpc
-  port: 443
-  server: leviko-ru4448.shopingggg.ir
-  servername: vps3.nemnogogo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-- name: 🇧🇷BR_6|678KB/s|S004-260618 [2afd52a37d62]
-  alterId: '0'
-  cipher: auto
-  network: tcp
-  port: 1270
-  server: 103.14.27.207
-  skip-cert-verify: false
-  sub_tag: S004-260618
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  xudp: true
-  packet-encoding: xudp
-  servername: xmfhlpy.com
 - name: 🇧🇬BG_7|2.3MB/s|A004-260618 [947bcc18d420]
   cipher: aes-256-cfb
   password: aLpQtfEZe445QyHk
@@ -367,15 +398,6 @@ proxies:
   server: 213.183.63.60
   sub_tag: A004-260618
   type: ss
-  udp: true
-- name: 🇺🇸US_123|769KB/s|P002-260618 [30b959b768eb]
-  password: None
-  port: 9002
-  server: 138.199.35.214
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
   udp: true
 - name: 🇺🇸US_595|789KB/s|P002-260618 [2cca269a4ba7]
   password: 'null'
@@ -387,11 +409,65 @@ proxies:
   type: http
   username: 'null'
   udp: true
+- name: 🇺🇸US_123|769KB/s|P002-260618 [30b959b768eb]
+  password: None
+  port: 9002
+  server: 138.199.35.214
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_56|745KB/s|R002-260618 [1ebc3aabf01f]
+  port: 443
+  server: kimberlymilano.icu
+  sni: kimberlymilano.icu
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
 - name: 🇺🇸US_170|820KB/s|R002-260618 [ffc0819f735f]
   port: 9002
   server: 138.199.35.195
   skip-cert-verify: true
   sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_134|806KB/s|P002-260618 [8d81cfcb4761]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.218
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇺🇸US_94|779KB/s|R002-260618 [edefc1e55ed7]
+  password: 'null'
+  port: 9002
+  server: 138.199.35.214
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇺🇸US_15|713KB/s|R002-260618 [8bfc45feda47]
+  port: 9002
+  server: 138.199.35.214
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_139|808KB/s|P002-260618 [a8fb52dac60b]
+  password: None
+  port: 9002
+  server: 138.199.35.196
+  skip-cert-verify: true
+  sub_tag: P002-260618
   tls: true
   type: http
   udp: true
@@ -404,50 +480,6 @@ proxies:
   type: http
   username: ''
   udp: true
-- type: vless
-  name: TW台湾(mibei77.com 米贝节点分享) (5)
-  server: free.fugui.lol
-  port: 19482
-  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: swdist.apple.com
-  sni: swdist.apple.com
-  skip-cert-verify: false
-  client-fingerprint: ios
-  reality-opts:
-    public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
-    short-id: fa514b83
-- name: 🇺🇸US_134|806KB/s|P002-260618 [8d81cfcb4761]
-  password: 'null'
-  port: 9002
-  server: 138.199.35.218
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 🇺🇸US_139|808KB/s|P002-260618 [a8fb52dac60b]
-  password: None
-  port: 9002
-  server: 138.199.35.196
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸US_94|779KB/s|R002-260618 [edefc1e55ed7]
-  password: 'null'
-  port: 9002
-  server: 138.199.35.214
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
 - name: 🇺🇸US_480|821KB/s|R002-260618 [8d0ae097fc88]
   port: 9002
   server: 138.199.35.218
@@ -457,67 +489,20 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 🇺🇸US_15|713KB/s|R002-260618 [8bfc45feda47]
+- name: 🇺🇸US_115|849KB/s|R002-260618 [69ea03375d59]
+  password: None
   port: 9002
-  server: 138.199.35.214
+  server: 138.199.35.195
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-- name: 🇺🇸US_75|832KB/s|R002-260618 [fc73875d8c32]
-  port: 443
-  server: goedkoopgeluid.icu
-  skip-cert-verify: true
-  sni: goedkoopgeluid.icu
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- type: vless
-  name: CA加拿大(mibei77.com 米贝节点分享) (3)
-  server: 172.64.152.19
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  servername: jp3.yohototo.top
-  sni: jp3.yohototo.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇷🇴RO_25|2.0MB/s|R002-260618 [2a38cb0737ea]
   port: 9002
   server: 193.176.84.23
   skip-cert-verify: true
   sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇳🇱NL_80|6.7MB/s [faaf59d2e35f]
-  password: 'null'
-  port: 9002
-  server: 84.17.47.148
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 🇺🇸US_636|633KB/s|R002-260618 [82bc43fb8ccb]
-  password: l1tlrdx52v
-  port: 62000
-  server: 66.253.2.69
-  sub_tag: R002-260618
-  type: socks5
-  username: u_rb1dba2
-  udp: true
-- name: NL_speednode_0014
-  port: 443
-  server: 149.36.51.129
-  skip-cert-verify: true
   tls: true
   type: http
   udp: true
@@ -531,39 +516,23 @@ proxies:
   type: http
   username: 'null'
   udp: true
-- name: 🇺🇸US_115|849KB/s|R002-260618 [69ea03375d59]
+- name: 🇳🇱NL_48|5.2MB/s|P002-260618 [6aa08aa36e29]
   password: None
-  port: 9002
-  server: 138.199.35.195
+  port: 23856
+  server: 51.159.225.196
   skip-cert-verify: true
-  sub_tag: R002-260618
+  sub_tag: P002-260618
   tls: true
   type: http
   udp: true
-- name: 🇩🇪DE_3|5.0MB/s|R002-260618 [379f30666176]
-  port: 9002
-  server: 158.173.154.2
+- name: 🇺🇸US_75|832KB/s|R002-260618 [fc73875d8c32]
+  port: 443
+  server: goedkoopgeluid.icu
   skip-cert-verify: true
+  sni: goedkoopgeluid.icu
   sub_tag: R002-260618
   tls: true
   type: http
-  udp: true
-- name: 🇫🇷FR_50|854KB/s|R002-260618 [e5d47e171534]
-  port: 9443
-  server: 138.199.47.247
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇩🇪DE_79|4.4MB/s [eafd2408d13f]
-  password: 'null'
-  port: 9002
-  server: 158.173.154.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
   udp: true
 - name: 🇳🇱NL_65|4.6MB/s|R002-260618 [bcf20a2004d6]
   port: 23856
@@ -573,40 +542,11 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 🇷🇴RO_60|1.9MB/s|R002-260618 [f438a8f40ada]
-  password: 'null'
-  port: 9002
-  server: 193.176.84.23
+- name: 🇮🇩ID_3|608KB/s|R002-260618 [1e85b67c9f00]
+  port: 443
+  server: 178.248.73.58
   skip-cert-verify: true
   sub_tag: R002-260618
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 🇷🇸RS_1|977KB/s|P002-260618 [fcdfc2675766]
-  password: None
-  port: 443
-  server: 146.70.221.34
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴RO_53|1.8MB/s|P002-260618 [f61079c44a7c]
-  password: None
-  port: 9002
-  server: 193.176.84.23
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇩🇪DE_34|6.1MB/s|P002-260618 [b8878eeb693b]
-  password: None
-  port: 9002
-  server: 158.173.154.2
-  skip-cert-verify: true
-  sub_tag: P002-260618
   tls: true
   type: http
   udp: true
@@ -619,6 +559,24 @@ proxies:
   tls: true
   type: http
   udp: true
+- name: 🇳🇱NL_80|6.7MB/s [faaf59d2e35f]
+  password: 'null'
+  port: 9002
+  server: 84.17.47.148
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇩🇪DE_79|4.4MB/s [eafd2408d13f]
+  password: 'null'
+  port: 9002
+  server: 158.173.154.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
 - name: 🇳🇱NL_92|5.5MB/s|R002-260618 [4251bc4d7d7f]
   port: 9002
   server: 84.17.47.123
@@ -626,42 +584,6 @@ proxies:
   sub_tag: R002-260618
   tls: true
   type: http
-  udp: true
-- name: 🇨🇭CH_27|1005KB/s|P002-260618 [58b636345fb8]
-  password: None
-  port: 9443
-  server: 37.120.213.210
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇳🇱NL_48|5.2MB/s|P002-260618 [6aa08aa36e29]
-  password: None
-  port: 23856
-  server: 51.159.225.196
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴RO_19|2.1MB/s [35f7c2fa6776]
-  port: 9002
-  server: 193.176.84.17
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴RO_94|2.0MB/s|R002-260618 [89c9a614ae47]
-  password: 'null'
-  port: 9002
-  server: 193.176.84.17
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  username: 'null'
   udp: true
 - name: 🇷🇴RO_91|1.3MB/s|P002-260618 [a767ca6149fc]
   password: None
@@ -683,58 +605,63 @@ proxies:
   type: http
   username: 'null'
   udp: true
-- name: 🇯🇵JP_6|145KB/s|P002-260618 [6c3b615333c9]
-  password: None
-  port: 343
-  server: 133.18.200.207
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
+- name: 🇺🇸US_636|633KB/s|R002-260618 [82bc43fb8ccb]
+  password: l1tlrdx52v
+  port: 62000
+  server: 66.253.2.69
+  sub_tag: R002-260618
+  type: socks5
+  username: u_rb1dba2
   udp: true
-- name: 🇺🇸US_86|771KB/s|P002-260618 [e1485bbbb7ea]
-  password: None
-  port: 443
-  server: kimberlymilano.icu
-  skip-cert-verify: false
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  sni: kimberlymilano.icu
-- name: 🇺🇸US_83|812KB/s|P002-260618 [0002809537c4]
+- name: 🇷🇴RO_53|1.8MB/s|P002-260618 [f61079c44a7c]
   password: None
   port: 9002
-  server: 138.199.35.218
+  server: 193.176.84.23
   skip-cert-verify: true
   sub_tag: P002-260618
   tls: true
   type: http
   udp: true
-- name: 🇺🇸US_114|781KB/s|P002-260618 [d0b846fb0830]
-  password: None
-  port: 443
-  server: tzoa.fun
-  skip-cert-verify: false
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  sni: tzoa.fun
-- name: 🇫🇷FR_49|1.6MB/s|R002-260618 [11547d29f85c]
+- name: 🇫🇷FR_50|854KB/s|R002-260618 [e5d47e171534]
   port: 9443
-  server: 213.139.9.142
+  server: 138.199.47.247
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-- name: 🇳🇱NL_81|3.1MB/s|K001-260618 [0314ff07d8b2]
-  password: 'null'
-  port: 23856
-  server: 51.159.225.196
+- name: 🇨🇭CH_27|1005KB/s|P002-260618 [58b636345fb8]
+  password: None
+  port: 9443
+  server: 37.120.213.210
   skip-cert-verify: true
-  sub_tag: K001-260618
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: NL_speednode_0014
+  port: 443
+  server: 149.36.51.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇷🇴RO_94|2.0MB/s|R002-260618 [89c9a614ae47]
+  password: 'null'
+  port: 9002
+  server: 193.176.84.17
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇷🇴RO_60|1.9MB/s|R002-260618 [f438a8f40ada]
+  password: 'null'
+  port: 9002
+  server: 193.176.84.23
+  skip-cert-verify: true
+  sub_tag: R002-260618
   tls: true
   type: http
   username: 'null'
@@ -748,109 +675,75 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 🇵🇱PL_2|2.1MB/s|R002-260618 [908517e451bd]
-  port: 443
-  server: 151.115.54.133
+- name: 🇩🇪DE_3|5.0MB/s|R002-260618 [379f30666176]
+  port: 9002
+  server: 158.173.154.2
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-- name: 🇳🇱NL_195|963KB/s|R002-260618 [d9c7802c7ad5]
-  password: None
+- name: 🇺🇸US_544|948KB/s|R002-260618 [e971c1f60e14]
   port: 443
-  server: 149.36.51.129
+  server: 38.247.141.135
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-- name: 🇺🇸US_87|812KB/s|P002-260618 [d842677472af]
-  password: None
-  port: 443
-  server: goedkoopgeluid.icu
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  sni: goedkoopgeluid.icu
-- name: 🇺🇸US_570|236KB/s [0205d799a499]
-  password: test123
-  port: 1080
-  server: 104.168.249.36
-  skip-cert-verify: true
-  type: socks5
-  username: test123
-  udp: true
-- name: 🇮🇩ID_1|680KB/s|R002-260618 [964f620b2028]
-  port: 443
-  server: 103.86.117.202
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸US_173|763KB/s|R002-260618 [cfc8a4e1f4af]
-  password: 'null'
-  port: 443
-  server: tzoa.fun
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-  sni: tzoa.fun
-- name: 🇳🇱NL_109|4.4MB/s|P002-260618 [111aaa619f5f]
+- name: 🇩🇪DE_34|6.1MB/s|P002-260618 [b8878eeb693b]
   password: None
   port: 9002
-  server: 84.17.47.123
+  server: 158.173.154.2
   skip-cert-verify: true
   sub_tag: P002-260618
   tls: true
   type: http
   udp: true
-- name: 🇨🇿CZ_1|2.5MB/s|R002-260618 [dea96bfbdd9e]
-  port: 443
-  server: 193.35.104.196
+- name: 🇷🇴RO_19|2.1MB/s [35f7c2fa6776]
+  port: 9002
+  server: 193.176.84.17
   skip-cert-verify: true
-  sub_tag: R002-260618
+  sni: www.bing.com
   tls: true
   type: http
   udp: true
-- name: 🇷🇸RS_4|1.1MB/s|R002-260618 [abf608120240]
+- name: 🇺🇸US_83|812KB/s|P002-260618 [0002809537c4]
+  password: None
+  port: 9002
+  server: 138.199.35.218
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇷🇸RS_1|977KB/s|P002-260618 [fcdfc2675766]
+  password: None
   port: 443
   server: 146.70.221.34
   skip-cert-verify: true
-  sub_tag: R002-260618
+  sub_tag: P002-260618
   tls: true
   type: http
   udp: true
-- name: 🇬🇷GR_1|865KB/s|R002-260618 [d9919f848d30]
-  port: 443
-  server: 149.22.85.65
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇳🇱NL_145|4.9MB/s [0bc1f2c7dc62]
-  password: 'null'
-  port: 9002
-  server: 84.17.47.123
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 🇪🇸ES_5|1.0MB/s|P002-260618 [c556a1f601e6]
+- name: 🇯🇵JP_6|145KB/s|P002-260618 [6c3b615333c9]
   password: None
-  port: 443
-  server: 82.102.17.178
+  port: 343
+  server: 133.18.200.207
   skip-cert-verify: true
   sub_tag: P002-260618
   tls: true
   type: http
+  udp: true
+- name: 🇱🇻LV_7|1.2MB/s|K001-260618 [7fdfdf3fba37]
+  password: None
+  port: 443
+  server: 85.203.39.130
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  username: ''
   udp: true
 - name: 🇵🇱PL_3|2.4MB/s|K001-260618 [7d600a30a2b6]
   password: 'null'
@@ -862,37 +755,38 @@ proxies:
   type: http
   username: 'null'
   udp: true
-- name: 🇺🇸US_56|745KB/s|R002-260618 [1ebc3aabf01f]
-  port: 443
-  server: kimberlymilano.icu
-  sni: kimberlymilano.icu
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴RO_71|1.9MB/s|R002-260618 [11354267ebab]
+- name: 🇺🇸US_557|914KB/s [8cb877750987]
   password: 'null'
-  port: 9002
-  server: 193.176.84.31
+  port: 443
+  server: 38.247.141.135
   skip-cert-verify: true
-  sub_tag: R002-260618
   tls: true
   type: http
   username: 'null'
   udp: true
-- name: 🇵🇹PT_3|943KB/s|R002-260618 [1379b2c67a6d]
+- name: 🇺🇸US_205|163KB/s|R002-260618 [5f9e954fe312]
   port: 443
-  server: 149.22.86.14
+  server: 137.175.22.56
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-- name: 🇺🇸US_82|769KB/s|R002-260618 [b5fee3ef00a5]
+- name: 🇪🇸ES_5|1.0MB/s|P002-260618 [c556a1f601e6]
+  password: None
   port: 443
-  server: tzoa.fun
-  sni: tzoa.fun
-  sub_tag: R002-260618
+  server: 82.102.17.178
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇸🇪SE_6|1.4MB/s|P002-260618 [30db867996ba]
+  password: None
+  port: 443
+  server: 146.70.242.146
+  skip-cert-verify: true
+  sub_tag: P002-260618
   tls: true
   type: http
   udp: true
@@ -907,63 +801,9 @@ proxies:
   username: 'null'
   udp: true
   sni: goedkoopgeluid.icu
-- name: 🇷🇴RO_48|2.2MB/s|R002-260618 [16b7d44488cc]
-  port: 9002
-  server: 193.176.84.31
-  skip-cert-verify: true
-  sni: www.bing.com
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇵🇱PL_1|2.8MB/s|P002-260618 [0559e2b40cf9]
-  password: None
+- name: 🇵🇱PL_2|2.1MB/s|R002-260618 [908517e451bd]
   port: 443
   server: 151.115.54.133
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇭🇷HR_1|576KB/s|R002-260618 [117c7e706dc7]
-  port: 443
-  server: 154.47.29.161
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇱🇻LV_7|1.2MB/s|K001-260618 [7fdfdf3fba37]
-  password: None
-  port: 443
-  server: 85.203.39.130
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  username: ''
-  udp: true
-- name: 🇮🇱IL_2|1.3MB/s|K001-260618 [d3b607996ace]
-  password: None
-  port: 443
-  server: 62.90.77.30
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  username: ''
-  udp: true
-- name: 🇸🇬SG_41|676KB/s|R002-260618 [1371d7facb24]
-  port: 9443
-  server: 152.233.9.239
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇮🇱IL_1|1.4MB/s|R002-260618 [bb294b91a05b]
-  port: 443
-  server: 62.90.77.30
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
@@ -978,12 +818,37 @@ proxies:
   type: http
   username: 'null'
   udp: true
-- name: 🇸🇪SE_6|1.4MB/s|P002-260618 [30db867996ba]
-  password: None
+- name: 🇫🇷FR_49|1.6MB/s|R002-260618 [11547d29f85c]
+  port: 9443
+  server: 213.139.9.142
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇷🇸RS_4|1.1MB/s|R002-260618 [abf608120240]
   port: 443
-  server: 146.70.242.146
+  server: 146.70.221.34
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇳🇱NL_109|4.4MB/s|P002-260618 [111aaa619f5f]
+  password: None
+  port: 9002
+  server: 84.17.47.123
   skip-cert-verify: true
   sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇳🇱NL_195|963KB/s|R002-260618 [d9c7802c7ad5]
+  password: None
+  port: 443
+  server: 149.36.51.129
+  skip-cert-verify: true
+  sub_tag: R002-260618
   tls: true
   type: http
   udp: true
@@ -993,22 +858,6 @@ proxies:
   server: 149.22.86.14
   skip-cert-verify: true
   sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇸🇬SG_9|582KB/s|R002-260618 [89790aba7d69]
-  port: 443
-  server: 154.26.139.24
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇮🇩ID_3|608KB/s|R002-260618 [1e85b67c9f00]
-  port: 443
-  server: 178.248.73.58
-  skip-cert-verify: true
-  sub_tag: R002-260618
   tls: true
   type: http
   udp: true
@@ -1022,12 +871,21 @@ proxies:
   type: http
   username: None
   udp: true
-- name: 🇮🇩ID_4|442KB/s|R002-260618 [6d6be7d79ea1]
-  password: 'null'
+- name: 🇺🇸US_86|771KB/s|P002-260618 [e1485bbbb7ea]
+  password: None
   port: 443
-  server: 178.248.73.58
+  server: kimberlymilano.icu
+  skip-cert-verify: false
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  sni: kimberlymilano.icu
+- name: 🇳🇱NL_145|4.9MB/s [0bc1f2c7dc62]
+  password: 'null'
+  port: 9002
+  server: 84.17.47.123
   skip-cert-verify: true
-  sub_tag: R002-260618
   tls: true
   type: http
   username: 'null'
@@ -1043,15 +901,106 @@ proxies:
   type: http
   username: None
   udp: true
-- name: 🇸🇬SG_33|269KB/s|K001-260618 [70b4ebb2f0c1]
+- name: 🇺🇸US_114|781KB/s|P002-260618 [d0b846fb0830]
   password: None
   port: 443
-  server: 154.26.139.24
+  server: tzoa.fun
+  skip-cert-verify: false
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  sni: tzoa.fun
+- name: 🇮🇱IL_1|1.4MB/s|R002-260618 [bb294b91a05b]
+  port: 443
+  server: 62.90.77.30
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_173|763KB/s|R002-260618 [cfc8a4e1f4af]
+  password: 'null'
+  port: 443
+  server: tzoa.fun
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+  sni: tzoa.fun
+- name: 🇳🇱NL_81|3.1MB/s|K001-260618 [0314ff07d8b2]
+  password: 'null'
+  port: 23856
+  server: 51.159.225.196
   skip-cert-verify: true
   sub_tag: K001-260618
   tls: true
   type: http
-  username: ''
+  username: 'null'
+  udp: true
+- name: 🇵🇱PL_1|2.8MB/s|P002-260618 [0559e2b40cf9]
+  password: None
+  port: 443
+  server: 151.115.54.133
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_82|769KB/s|R002-260618 [b5fee3ef00a5]
+  port: 443
+  server: tzoa.fun
+  sni: tzoa.fun
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇵🇹PT_3|943KB/s|R002-260618 [1379b2c67a6d]
+  port: 443
+  server: 149.22.86.14
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_612|118KB/s|M003-260806 [11202b21892a]
+  alterId: '0'
+  cipher: auto
+  network: ws
+  port: 8443
+  server: 172.67.167.78
+  skip-cert-verify: false
+  sub_tag: M003-260806
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  ws-opts:
+    headers:
+      Host: v2ray1.dozapp.xyz
+    path: /lMnsZUN4/
+  xudp: true
+  packet-encoding: xudp
+  servername: v2ray1.dozapp.xyz
+- name: 🇺🇸US_87|812KB/s|P002-260618 [d842677472af]
+  password: None
+  port: 443
+  server: goedkoopgeluid.icu
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  sni: goedkoopgeluid.icu
+- name: 🇷🇴RO_48|2.2MB/s|R002-260618 [16b7d44488cc]
+  port: 9002
+  server: 193.176.84.31
+  skip-cert-verify: true
+  sni: www.bing.com
+  sub_tag: R002-260618
+  tls: true
+  type: http
   udp: true
 - name: 🇺🇸US_110|736KB/s|K001-260618 [34ec23bd9506]
   password: 'null'
@@ -1064,6 +1013,94 @@ proxies:
   username: 'null'
   udp: true
   sni: kimberlymilano.icu
+- name: 🇬🇷GR_1|865KB/s|R002-260618 [d9919f848d30]
+  port: 443
+  server: 149.22.85.65
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇮🇱IL_2|1.3MB/s|K001-260618 [d3b607996ace]
+  password: None
+  port: 443
+  server: 62.90.77.30
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: 🇭🇷HR_1|576KB/s|R002-260618 [117c7e706dc7]
+  port: 443
+  server: 154.47.29.161
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇨🇿CZ_1|2.5MB/s|R002-260618 [dea96bfbdd9e]
+  port: 443
+  server: 193.35.104.196
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇷🇴RO_71|1.9MB/s|R002-260618 [11354267ebab]
+  password: 'null'
+  port: 9002
+  server: 193.176.84.31
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇸🇬SG_9|582KB/s|R002-260618 [89790aba7d69]
+  port: 443
+  server: 154.26.139.24
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇮🇩ID_4|442KB/s|R002-260618 [6d6be7d79ea1]
+  password: 'null'
+  port: 443
+  server: 178.248.73.58
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 🇸🇬SG_33|269KB/s|K001-260618 [70b4ebb2f0c1]
+  password: None
+  port: 443
+  server: 154.26.139.24
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: 🇸🇬SG_41|676KB/s|R002-260618 [1371d7facb24]
+  port: 9443
+  server: 152.233.9.239
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇮🇩ID_1|680KB/s|R002-260618 [964f620b2028]
+  port: 443
+  server: 103.86.117.202
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
 - name: 🇳🇱NL_163|9.6MB/s|A004-260618 [5d74d658f7e7]
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -1802,6 +1839,25 @@ proxies:
   type: http
   username: ''
   udp: true
+- name: 🇬🇧GB_26|5.3MB/s|M003-260806 [c098ce6d60bc]
+  alterId: 0
+  cipher: auto
+  network: ws
+  port: 80
+  server: 57.129.132.223
+  skip-cert-verify: false
+  sub_tag: M003-260806
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  ws-opts:
+    headers:
+      Host: google.com
+    path: /vmess/
+  xudp: true
+  packet-encoding: xudp
+  servername: google.com
 - name: 🇳🇱NL_20|5.3MB/s|P002-260618 [f84dd5f92876]
   password: None
   port: 9002
@@ -1819,11 +1875,6 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 🇰🇷KR_1|5.3MB/s
-  port: 1080
-  server: 59.11.209.162
-  skip-cert-verify: true
-  type: socks5
 - name: 🇩🇪DE_62|5.2MB/s|M003-260806 [28e62b7f0576]
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -1953,11 +2004,6 @@ proxies:
   xudp: true
   packet-encoding: xudp
   servername: 19.baklajann.ru
-- name: 🇰🇷KR_2|5.1MB/s
-  port: 80
-  server: 101.79.22.162
-  skip-cert-verify: true
-  type: http
 - name: 🇩🇪DE_164|5.0MB/s|S001-260618 [036a98c673ba]
   password: ''
   port: 1080
@@ -2326,11 +2372,87 @@ proxies:
   sub_tag: C002-260622
   type: trojan
   udp: true
+- name: 🇩🇪DE_52|4.2MB/s|A004-260618 [4017f3ee016d]
+  client-fingerprint: chrome
+  network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.96
+  skip-cert-verify: false
+  sni: learn.iloverussia2026.com
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+- type: hysteria
+  name: 🇺🇸_US_美国_IPV4 (2)
+  server: 137.175.82.41
+  port: 20022
+  password: dongtaiwang.com
+  tls: true
+  servername: bing.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: '11'
+  down: '55'
+  auth-str: dongtaiwang.com
+- type: hysteria
+  name: 🇺🇸_US_美国_IPV4 (2) (2)
+  server: 38.6.222.132
+  port: 11008
+  password: dongtaiwang.com
+  tls: true
+  servername: bing.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: '11'
+  down: '55'
+  auth-str: dongtaiwang.com
+- type: hysteria
+  name: 🇺🇸_US_美国_IPV4 (3)
+  server: 38.6.222.131
+  port: 11008
+  password: dongtaiwang.com
+  tls: true
+  servername: bing.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: '11'
+  down: '55'
+  auth-str: dongtaiwang.com
+- type: hysteria
+  name: 🇫🇷_FR_法国_IPV4
+  server: 62.210.124.132
+  port: 24667
+  password: dongtaiwang.com
+  tls: true
+  servername: bing.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: '11'
+  down: '55'
+  auth-str: dongtaiwang.com
+- type: hysteria2
+  name: 🇺🇸_US_美国_IPV4 (4)
+  server: starlink-ft.251313.xyz
+  port: 443
+  password: https://xship.2fa.cat
+  tls: true
+  servername: xship.top
+  sni: xship.top
+  skip-cert-verify: true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   down: 55 Mbps
-  name: 🇫🇷FR_1|3.1MB/s
+  name: https://alvin9999.com
   port: 24667
   protocol: udp
   server: 62.210.124.132
@@ -2358,21 +2480,22 @@ proxies:
   sni: www.microsoft.com
   type: hysteria2
   udp: true
-- name: 🇳🇱229914 | ⚡️Telegram = t.me/L...
-  password: 04920673-035c-410d-94e4-5b1469d3fb6f
-  port: 42848
-  server: 171.22.183.158
-  skip-cert-verify: true
-  sni: 171.22.183.158
-  tls: false
-  type: hysteria2
-- name: ' 🇺🇸 23@exclavevpn'
+- name: 🇺🇸 24@exclavevpn
   obfs: salamander
   obfs-password: re61ep4ancwplwh8
   password: 57beeeb0-03fc-4fc9-94da-7604488a7134
   port: 40055
   server: 154.40.49.216
+  skip-cert-verify: true
   sni: psstatic.cdn.bcebos.com
+  tls: false
+  type: hysteria2
+- name: 🇬🇧25@exclavevpn
+  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  port: 13337
+  server: 128.254.186.57
+  skip-cert-verify: true
+  sni: mother-earth.fyi
   tls: false
   type: hysteria2
 - name: 🇺🇸139909 | ⚡️Telegram = t.me/S...
@@ -2383,11 +2506,33 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
+- name: 🆓13@oneclickvpnkeys
+  password: 04920673-035c-410d-94e4-5b1469d3fb6f
+  port: 42848
+  server: 171.22.183.158
+  sni: 171.22.183.158
+  tls: false
+  type: hysteria2
 - name: 🔰66@oneclickvpnkeys
   password: 04920673-035c-410d-94e4-5b1469d3fb6f
   port: 42848
   server: 91.211.27.231
   sni: 171.22.183.158
+  tls: false
+  type: hysteria2
+- name: 🇺🇸230832 | ⚡️Telegram = t.me/L...
+  password: 0b396097d052915ef304b40d2bda6a2d
+  port: 8443
+  server: 179.254.94.184
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '@VPsave'
+  password: 111a64ce-3aaf-4154-9ee9-7bcc0e214d7c
+  port: 443
+  server: 177.3.252.187
+  sni: quattro-vpn-zalupa.cxhub.su
   tls: false
   type: hysteria2
 - name: '@ConfigV2RayNG'
@@ -2398,15 +2543,6 @@ proxies:
   server: us1.taptapvpn.top
   skip-cert-verify: false
   sni: us1.taptapvpn.top
-  tls: false
-  type: hysteria2
-- name: 🔰33@oneclickvpnkeys
-  obfs: salamander
-  obfs-password: S4iBMpc3aIzLC1c-6fE6rU15ZzXyfjr0ciGdh0A3alI
-  password: 247802ca-0fbb-428a-b807-91a6e571b5c7
-  port: 443
-  server: 166.0.28.140
-  sni: static-de.snobmenu.xyz
   tls: false
   type: hysteria2
 - name: ✅  @vistav2ray کانال ما ✅
@@ -2429,18 +2565,43 @@ proxies:
   sni: static-nl.snobvpn.online
   tls: false
   type: hysteria2
-- alpn:
-  - h3
-  name: '@OutlineReleasedKey'
+- name: 🇫🇷230830 | ⚡️Telegram = t.me/L...
+  obfs: salamander
+  obfs-password: 7lxfFHnxyPtOOafv
+  password: 4cbeddb7-022d-46a8-bca8-a3667abda9ac
+  port: 45106
+  server: v1fr4.stablenode.cloud
+  skip-cert-verify: false
+  sni: v1fr4.stablenode.cloud
+  tls: false
+  type: hysteria2
+- name: 🇫🇷230827 | ⚡️Telegram = t.me/L...
+  obfs: salamander
+  obfs-password: N2rvCMYcDxnEWHVQ
+  password: 4cbeddb7-022d-46a8-bca8-a3667abda9ac
+  port: 45206
+  server: v1fr4.stablenode.cloud
+  skip-cert-verify: false
+  sni: v1fr4.stablenode.cloud
+  tls: false
+  type: hysteria2
+- name: '@VPsave #1'
+  password: 4dea9141-914b-4a25-86b4-c5f98616cb8d
+  port: 443
+  server: 177.3.252.187
+  sni: quattro-vpn-zalupa.cxhub.su
+  tls: false
+  type: hysteria2
+- name: '@OutlineReleasedKey'
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   port: 443
   server: 212.34.137.105
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: shorts.blog-forme.ru
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: '@OutlineReleasedKey #2'
+  name: '@OutlineReleasedKey #1'
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   port: 24403
   server: 94.183.164.119
@@ -2457,7 +2618,9 @@ proxies:
   sni: hkzfsg2.mateflora.com
   tls: false
   type: hysteria2
-- name: 📗66@oneclickvpnkeys
+- alpn:
+  - h3
+  name: '@VPsave #2'
   obfs: salamander
   obfs-password: 6fltjteoyab7fjf1
   password: 57beeeb0-03fc-4fc9-94da-7604488a7134
@@ -2477,26 +2640,14 @@ proxies:
   sni: bgsg2.hikigo.com
   tls: false
   type: hysteria2
-- name: '@VPsave'
+- name: '@VPsave #3'
   obfs: salamander
-  obfs-password: off3io88xwyc76g8
+  obfs-password: re61ep4ancwplwh8
   password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  port: 4430
-  server: a3dee.supertoolify.com
+  port: 40055
+  server: a3dgus.supertoolify.com
   skip-cert-verify: true
   sni: psstatic.cdn.bcebos.com
-  tls: false
-  type: hysteria2
-- alpn:
-  - h3
-  name: '@VPsave #1'
-  obfs: salamander
-  obfs-password: e3ymhs6gbzptjysj
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  port: 443
-  server: dg3rb.ianai.it.com
-  skip-cert-verify: true
-  sni: dg3rb.ianai.it.com
   tls: false
   type: hysteria2
 - name: '✅  @vistav2ray کانال ما ✅ #2'
@@ -2531,7 +2682,7 @@ proxies:
   type: hysteria2
 - alpn:
   - h3
-  name: ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = @ꜰxxɴᴇᴛ🤡
+  name: Telegram%@VPNConnectd
   obfs: salamander
   obfs-password: qrl-03E8Q6JaUlAkOPHXQBwN
   password: 74bec046f0004aa5bc280ecc4ab50465
@@ -2549,6 +2700,38 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- name: '@OutlineReleasedKey #2'
+  password: 87bb2ac4-b7a1-0001-b11d-2107709ea6cb
+  port: 443
+  server: 136.148.83.69
+  skip-cert-verify: true
+  sni: szqbx-ru-77dc.my-fade.cloud
+  tls: false
+  type: hysteria2
+- name: '🇬🇧 英国 | GBR #3'
+  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  port: 13337
+  server: uk-tube-01.stre4m.net
+  skip-cert-verify: true
+  sni: mother-earth.fyi
+  tls: false
+  type: hysteria2
+- name: 🇺🇸230834 | ⚡️Telegram = t.me/L...
+  password: AIcYjw5Oc9Rrrr9SGDUBbBIC
+  port: 36712
+  server: 38.76.150.108
+  skip-cert-verify: true
+  sni: 'off'
+  tls: false
+  type: hysteria2
+- name: 🇫🇷24@exclavevpn
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 13.36.234.11
+  skip-cert-verify: true
+  sni: vpn-fr-001.fastervpn.world
+  tls: false
+  type: hysteria2
 - name: 🩵+@Azarakhsh_Proxy+🩷
   obfs: salamander
   obfs-password: KevinZakarian
@@ -2557,14 +2740,6 @@ proxies:
   server: 179.61.132.96
   skip-cert-verify: true
   sni: 179.61.132.96
-  tls: false
-  type: hysteria2
-- name: '@v2ray313 کانالمون 😀'
-  password: Telegram--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X-
-  port: 26503
-  server: ir.config7x.site
-  skip-cert-verify: false
-  sni: hy.config7x.site
   tls: false
   type: hysteria2
 - name: Telegram@vpnjey
@@ -2637,7 +2812,7 @@ proxies:
   sni: de2.jey.cc.cd
   tls: false
   type: hysteria2
-- name: 'Telegram@vpnjey #7'
+- name: 🇩🇪230829 | ⚡️Telegram = t.me/L...
   obfs: salamander
   obfs-password: Telegram@vpnjey
   password: VpNJEy
@@ -2657,7 +2832,7 @@ proxies:
   sni: de2.jey.cc.cd
   tls: false
   type: hysteria2
-- name: '@OutlineReleasedKey #4'
+- name: '@OutlineReleasedKey #5'
   password: a35c508f-4d5d-4531-842e-6e9d43c762c0
   port: 4444
   server: 179.254.191.251
@@ -2665,7 +2840,7 @@ proxies:
   sni: bl1.nexfile.net
   tls: false
   type: hysteria2
-- name: '@OutlineReleasedKey #5'
+- name: '@OutlineReleasedKey #6'
   obfs: ''
   obfs-password: ''
   password: a35c508f-4d5d-4531-842e-6e9d43c762c0
@@ -2695,21 +2870,38 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- name: '@OutlineReleasedKey #6'
+- name: 🇫🇷230828 | ⚡️Telegram = t.me/L...
+  obfs: salamander
+  obfs-password: N2rvCMYcDxnEWHVQ
+  password: b6492705-8cac-4454-9d34-1498dd2ded87
+  port: 45206
+  server: v1fr4.stablenode.cloud
+  skip-cert-verify: false
+  sni: v1fr4.stablenode.cloud
+  tls: false
+  type: hysteria2
+- name: '@VPsave #4'
+  password: c358d323-c2c7-4457-bfdb-dd736ba16d38
+  port: 443
+  server: 177.3.252.187
+  sni: quattro-vpn-zalupa.cxhub.su
+  tls: false
+  type: hysteria2
+- name: '@OutlineReleasedKey #7'
   password: ca60984f-b1f0-4073-bd33-4c75168f749a
   port: 443
   server: 45.137.201.211
   sni: wwe.fantoff.online
   tls: false
   type: hysteria2
-- name: 📗5@oneclickvpnkeys
+- name: 🇫🇷230767 | ⚡️Telegram = t.me/L...
   obfs: salamander
-  obfs-password: HVD1C0uyo38mMz8B
-  password: capadmae6e0190
-  port: 443
-  server: 51.15.16.68
-  skip-cert-verify: true
-  sni: vpn.local
+  obfs-password: N2rvCMYcDxnEWHVQ
+  password: cc0212a7-6b18-42f8-bb1f-177e035d1acb
+  port: 45206
+  server: v1fr4.stablenode.cloud
+  skip-cert-verify: false
+  sni: v1fr4.stablenode.cloud
   tls: false
   type: hysteria2
 - alpn:
@@ -2724,6 +2916,13 @@ proxies:
   sni: tomsk.gosgenarchive.com
   tls: false
   type: hysteria2
+- name: '@VPsave #5'
+  password: d0975db4-e8c8-41f7-a5f3-a3d1d432e499
+  port: 443
+  server: 194.93.61.120
+  sni: nether.cxhub.su
+  tls: false
+  type: hysteria2
 - name: '@v2ray_phoenix'
   obfs: salamander
   obfs-password: km9oqmefh2km1i5n
@@ -2734,12 +2933,12 @@ proxies:
   sni: panel.autonetshop.ir
   tls: false
   type: hysteria2
-- name: 🇳🇱NL-🚀@VPNine1
-  password: d283bbfe-d5cd-4576-bc1a-630a7a5ad829
+- name: 🇳🇱24@exclavevpn
+  password: d4ca9415f0eac7897472e1e5b86d2e96
   port: 443
-  server: 144.31.128.13
+  server: 50.7.38.243
   skip-cert-verify: true
-  sni: retryquery.luxe-self.co.uk
+  sni: promo.betust.net
   tls: false
   type: hysteria2
 - name: 🔰34@oneclickvpnkeys
@@ -2768,33 +2967,11 @@ proxies:
   sni: nas.aizhzo.com
   tls: false
   type: hysteria2
-- name: '@OutlineReleasedKey #7'
-  password: fa937345-6d3e-4ff4-8127-1a836987a0db
-  port: 10444
-  server: 195.63.128.21
-  sni: germany.cloudhouse1.ru
-  tls: false
-  type: hysteria2
 - name: '@OutlineReleasedKey #8'
   password: fa937345-6d3e-4ff4-8127-1a836987a0db
-  port: 5443
+  port: 10444
   server: 195.63.128.21
   sni: germany.cloudhouse1.ru
-  tls: false
-  type: hysteria2
-- name: '@OutlineReleasedKey #9'
-  password: fa937345-6d3e-4ff4-8127-1a836987a0db
-  port: 10444
-  server: 195.63.138.212
-  sni: cloudehouse24.ru
-  tls: false
-  type: hysteria2
-- name: 📗96@oneclickvpnkeys
-  password: oracle_hy2_pass_2026
-  port: 8443
-  server: 129.225.181.46
-  skip-cert-verify: true
-  sni: bing.com
   tls: false
   type: hysteria2
 - name: '@confiig_hub #1'
@@ -2827,152 +3004,35 @@ proxies:
   sni: de2.jey.cc.cd
   tls: false
   type: hysteria2
-- auth: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  name: 新加坡1|@ripaojiedian
-  obfs: salamander
-  obfs-password: sj1awrdwnn5lbuno
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  port: 443
-  server: bgsg2.hikigo.com
+- auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  name: '🇬🇧 英国 | GBR #1'
+  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  port: 13337
+  server: 128.254.186.190
   skip-cert-verify: true
-  sni: bgsg2.hikigo.com
+  sni: mother-earth.fyi
   tls: false
   type: hysteria2
-  udp: true
-- auth: 5dc783605a6829f831a21d86bb913c7a
-  name: '🇯🇵 日本 | JPN #2'
-  password: 5dc783605a6829f831a21d86bb913c7a
+- auth: GeH9cDNl6FcXvgpfU8Sz0MNwQgPEm7Cv
+  name: '🇯🇵 日本 | JPN #1'
+  password: GeH9cDNl6FcXvgpfU8Sz0MNwQgPEm7Cv
   port: 443
-  server: 64.204.49.143
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:8e4e:939b:b987:39aa:c46c/128
-  mtu: 1280
-  name: ❓Other_1|1.6MB/s
-  port: 4198
-  private-key: OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  reserved:
-  - 0
-  - 0
-  - 0
-  server: 8.6.112.200
-  type: wireguard
-  udp: true
-- ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:8e4e:939b:b987:39aa:c46c/128
-  mtu: 1280
-  name: 🇨🇳CN_1|1.2MB/s
-  port: 1180
-  private-key: OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  reserved:
-  - 0
-  - 0
-  - 0
-  server: 8.6.112.246
-  type: wireguard
-  udp: true
-- ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:8e4e:939b:b987:39aa:c46c/128
-  mtu: 1280
-  name: 🇨🇳CN_2|2.9MB/s
-  port: 908
-  private-key: OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  reserved:
-  - 0
-  - 0
-  - 0
-  server: 8.6.112.58
-  type: wireguard
-  udp: true
-- ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:8e4e:939b:b987:39aa:c46c/128
-  mtu: 1280
-  name: 🇨🇳CN_3|2.6MB/s
-  port: 955
-  private-key: OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  reserved:
-  - 0
-  - 0
-  - 0
-  server: 8.6.112.100
-  type: wireguard
-  udp: true
-- ip: 172.16.0.2/32
-  keepalive: '5'
-  mtu: 1280
-  name: 🇨🇳CN_4|1.6MB/s
-  persistent-keepalive: '5'
-  port: 987
-  presharedkey: ''
-  private-key: GJTd46xB/fjfi6vyJmpxUiNrNdjZTW0Qhi7b0PkER1Y=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  reserved:
-  - 175
-  - 93
-  - 41
-  server: 188.114.97.6
-  type: wireguard
-  udp: true
-  wnoise: quic
-  wnoisecount: '15'
-  wnoisedelay: 1-2
-  wpayloadsize: 5-10
-- ip: 172.16.0.2/32
-  keepalive: '5'
-  mtu: 1280
-  name: ❓Other_2|2.2MB/s
-  persistent-keepalive: '5'
-  port: 4500
-  private-key: EH18t6hUfxFfP5cUXKBNGXgLS9wTgQ/iMNSTOlBCDHs=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  reserved:
-  - 114
-  - 58
-  - 245
-  server: 162.159.192.4
-  type: wireguard
-  udp: true
-  wnoise: quic
-  wnoisecount: '5'
-  wnoisedelay: '5'
-  wpayloadsize: 40-90
-- auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  fingerprint: 89:61:86:FE:B2:0C:B7:40:31:87:A4:5F:F3:BD:5D:DC:8B:FB:DD:41:9D:77:9D:55:D7:86:18:9D:36:73:1A:69
-  name: '🇰🇷 韩国 | KOR #1'
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  port: 443
-  server: 43.201.46.216
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- auth: BUXbnqjJsANkol0C-McZxw
-  name: '🇳🇱 荷兰 | NLD #4'
-  password: BUXbnqjJsANkol0C-McZxw
-  port: 443
-  server: 79.110.231.7
+  server: 43.165.129.121
   skip-cert-verify: true
   sni: www.bing.com
   tls: false
   type: hysteria2
 - auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  fingerprint: C1:FD:40:94:1F:91:9B:5C:78:96:24:40:97:F2:2D:9D:95:8E:62:5C:D9:58:B7:5F:34:CC:FA:42:18:1F:50:B2
-  name: '🇸🇬 新加坡 | SGP #4'
+  fingerprint: c1fd40941f919b5c7896244097f22d9d958e625cd958b75f34ccfa42181f50b2
+  name: '🇸🇬 新加坡 | SGP #5'
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 443
-  server: 47.129.253.166
+  server: 54.254.183.34
   skip-cert-verify: true
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 🇭🇰 香港 | HKG 3
+- name: 🇭🇰 香港 | HKG
   server: 23.141.172.229
   port: 50541
   type: hysteria2
@@ -2980,8 +3040,8 @@ proxies:
   auth: ePPsH1bMFD
   sni: is1-ssl.mzstatic.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 | KOR
-  server: 43.203.228.99
+- name: ProxyPool | 🇰🇷 韩国 | KOR 3
+  server: 43.201.31.151
   port: 443
   type: hysteria2
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
@@ -2989,51 +3049,15 @@ proxies:
   fingerprint: 89:61:86:FE:B2:0C:B7:40:31:87:A4:5F:F3:BD:5D:DC:8B:FB:DD:41:9D:77:9D:55:D7:86:18:9D:36:73:1A:69
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 193.233.130.66
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 54.255.246.31
   port: 443
   type: hysteria2
-  password: d0975db4-e8c8-41f7-a5f3-a3d1d432e499
-  auth: d0975db4-e8c8-41f7-a5f3-a3d1d432e499
-  sni: app.vles.space
-  skip-cert-verify: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 193.233.130.66
-  port: 443
-  type: hysteria2
-  password: e2552c42-fdf8-45d4-9be5-98819dcd0211
-  auth: e2552c42-fdf8-45d4-9be5-98819dcd0211
-  sni: app.vles.space
-  skip-cert-verify: true
-- type: hysteria2
-  name: 🇷🇺_俄罗斯 (19)
-  server: 136.148.83.69
-  port: 443
-  password: 87bb2ac4-b7a1-0001-b11d-2107709ea6cb
-  udp: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  sni: szqbx-ru-77dc.my-fade.cloud
-  skip-cert-verify: true
-- type: hysteria2
-  name: 🇺🇸_美国 (32)
-  server: 104.233.178.179
-  port: 443
-  password: fanvpn.net
-  udp: true
-  servername: www.bing.com
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  fingerprint: C1:FD:40:94:1F:91:9B:5C:78:96:24:40:97:F2:2D:9D:95:8E:62:5C:D9:58:B7:5F:34:CC:FA:42:18:1F:50:B2
   sni: www.bing.com
   skip-cert-verify: true
-- type: hysteria2
-  name: 🇺🇸_美国 (33)
-  server: 64.118.154.18
-  port: 40055
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  servername: psstatic.cdn.bcebos.com
-  sni: psstatic.cdn.bcebos.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 6fltjteoyab7fjf1
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -3048,113 +3072,117 @@ proxy-groups:
   - US美国(mibei77.com 米贝节点分享)
   - 🇫🇷FR_140|706KB/s|C002-260622 [6f275700373d]
   - 🇫🇷FR_105|1.3MB/s|B007-260618 [18a612463211]
-  - 🇺🇸US_59|174KB/s [60b18e513b09]
-  - 🇺🇸US_272|1.7MB/s|M003-260806 [0f851a6a1744]
-  - 🇺🇸US_468|928KB/s|K001-260618 [5708f18d59b1]
+  - 🇭🇰HK香港節點丨yoyapai.com_2
+  - 🇭🇰HK香港節點丨yoyapai.com
+  - 🇭🇰HK香港節點丨yoyapai.com (2)
   - 🇺🇸US_2|1.3MB/s [b3491eae71bd]
+  - 🇺🇸US_468|928KB/s|K001-260618 [5708f18d59b1]
+  - 🇨🇦_加拿大 (2)
   - 🇺🇸US_511|972KB/s|A004-260618 [3d3e162aa83d]
   - 🇺🇸US_52|1.3MB/s|M003-260806 [ecaaa0c4e1b7]
-  - '@DeltaKroneckerGithub_3021_IPV4'
-  - 🇮🇹IT意大利丨yoyapai.com
-  - 🇮🇹IT意大利丨yoyapai.com (7)
-  - ❓未知丨yoyapai.com (8)
-  - ❓未知丨yoyapai.com (4)
-  - 🇳🇱NL_32|4.8MB/s|A004-260618 [d8fb37e5c506]
-  - ❓未知丨yoyapai.com (18)
-  - 🇬🇧GB_26|5.3MB/s|M003-260806 [c098ce6d60bc]
-  - 🇮🇹IT意大利丨yoyapai.com (2)
-  - 🇪🇸ES_2|2.6MB/s|M003-260806 [f6618bfd7595]
   - 🇳🇱NL_53|5.8MB/s|A003-260618 [cb6ae96da10d]
-  - 🇮🇹IT意大利丨yoyapai.com (3)
-  - 🇳🇱NL_160|2.6MB/s [755ad3db773a]
-  - ❓未知丨yoyapai.com (5)
-  - 🇳🇱NL_29|7.0MB/s|A004-260618 [0e3d0fb5ae4d]
+  - 🇳🇱NL_32|4.8MB/s|A004-260618 [d8fb37e5c506]
   - 🇩🇪DE_66|5.9MB/s|M003-260806 [68341a0cc2e8]
-  - ❓未知丨yoyapai.com (17)
-  - ❓未知丨yoyapai.com (6)
+  - 🇳🇱NL_160|2.6MB/s [755ad3db773a]
+  - 🇺🇸US_272|1.7MB/s|M003-260806 [0f851a6a1744]
+  - ❓未知丨yoyapai.com (4)
+  - 🇳🇱NL_29|7.0MB/s|A004-260618 [0e3d0fb5ae4d]
   - 🇬🇧GB_27|84KB/s|A004-260618 [70c7619e3093]
-  - 🇩🇪DE_69|2.8MB/s|B007-260618 [1134b8e46720]
-  - 🇱🇹LT_7|2.0MB/s|A004-260618 [6fbcb073e15b]
-  - 🇧🇬BG_4|277KB/s|A004-260618 [67e57f79a756]
-  - 🇷🇺 俄罗斯 | RUS 2
+  - ❓未知丨yoyapai.com (17)
   - 🇧🇷BR_6|678KB/s|S004-260618 [2afd52a37d62]
+  - 🇮🇹IT意大利丨yoyapai.com (7)
+  - 🇩🇪DE_69|2.8MB/s|B007-260618 [1134b8e46720]
+  - 🇪🇸ES_2|2.6MB/s|M003-260806 [f6618bfd7595]
+  - ❓未知丨yoyapai.com (8)
+  - ❓未知丨yoyapai.com (5)
+  - ❓未知丨yoyapai.com (6)
+  - '@DeltaKroneckerGithub_3021_IPV4'
+  - ❓未知丨yoyapai.com (18)
+  - 🇧🇬BG_4|277KB/s|A004-260618 [67e57f79a756]
+  - 🇮🇹IT意大利丨yoyapai.com
+  - 🇮🇹IT意大利丨yoyapai.com (3)
+  - 🇱🇹LT_7|2.0MB/s|A004-260618 [6fbcb073e15b]
+  - 🇮🇹IT意大利丨yoyapai.com (2)
+  - 🇳🇱_荷兰 (4)
+  - 🇸🇬SG_24|827KB/s|M003-260806 [4a280760256b]
   - 🇧🇬BG_7|2.3MB/s|A004-260618 [947bcc18d420]
-  - 🇺🇸US_123|769KB/s|P002-260618 [30b959b768eb]
   - 🇺🇸US_595|789KB/s|P002-260618 [2cca269a4ba7]
+  - 🇺🇸US_123|769KB/s|P002-260618 [30b959b768eb]
+  - 🇺🇸US_56|745KB/s|R002-260618 [1ebc3aabf01f]
   - 🇺🇸US_170|820KB/s|R002-260618 [ffc0819f735f]
-  - 🇺🇸US_157|774KB/s [cf879bee4e97]
-  - TW台湾(mibei77.com 米贝节点分享) (5)
   - 🇺🇸US_134|806KB/s|P002-260618 [8d81cfcb4761]
-  - 🇺🇸US_139|808KB/s|P002-260618 [a8fb52dac60b]
   - 🇺🇸US_94|779KB/s|R002-260618 [edefc1e55ed7]
-  - 🇺🇸US_480|821KB/s|R002-260618 [8d0ae097fc88]
   - 🇺🇸US_15|713KB/s|R002-260618 [8bfc45feda47]
-  - 🇺🇸US_75|832KB/s|R002-260618 [fc73875d8c32]
-  - CA加拿大(mibei77.com 米贝节点分享) (3)
-  - 🇷🇴RO_25|2.0MB/s|R002-260618 [2a38cb0737ea]
-  - 🇳🇱NL_80|6.7MB/s [faaf59d2e35f]
-  - 🇺🇸US_636|633KB/s|R002-260618 [82bc43fb8ccb]
-  - NL_speednode_0014
-  - 🇺🇸US_8|859KB/s|P002-260618 [d71325a4e884]
+  - 🇺🇸US_139|808KB/s|P002-260618 [a8fb52dac60b]
+  - 🇺🇸US_157|774KB/s [cf879bee4e97]
+  - 🇺🇸US_480|821KB/s|R002-260618 [8d0ae097fc88]
   - 🇺🇸US_115|849KB/s|R002-260618 [69ea03375d59]
-  - 🇩🇪DE_3|5.0MB/s|R002-260618 [379f30666176]
-  - 🇫🇷FR_50|854KB/s|R002-260618 [e5d47e171534]
-  - 🇩🇪DE_79|4.4MB/s [eafd2408d13f]
-  - 🇳🇱NL_65|4.6MB/s|R002-260618 [bcf20a2004d6]
-  - 🇷🇴RO_60|1.9MB/s|R002-260618 [f438a8f40ada]
-  - 🇷🇸RS_1|977KB/s|P002-260618 [fcdfc2675766]
-  - 🇷🇴RO_53|1.8MB/s|P002-260618 [f61079c44a7c]
-  - 🇩🇪DE_34|6.1MB/s|P002-260618 [b8878eeb693b]
-  - 🇳🇱NL_256|3.2MB/s|R002-260618 [473082dc26a6]
-  - 🇳🇱NL_92|5.5MB/s|R002-260618 [4251bc4d7d7f]
-  - 🇨🇭CH_27|1005KB/s|P002-260618 [58b636345fb8]
+  - 🇷🇴RO_25|2.0MB/s|R002-260618 [2a38cb0737ea]
+  - 🇺🇸US_8|859KB/s|P002-260618 [d71325a4e884]
   - 🇳🇱NL_48|5.2MB/s|P002-260618 [6aa08aa36e29]
-  - 🇷🇴RO_19|2.1MB/s [35f7c2fa6776]
-  - 🇷🇴RO_94|2.0MB/s|R002-260618 [89c9a614ae47]
+  - 🇺🇸US_75|832KB/s|R002-260618 [fc73875d8c32]
+  - 🇳🇱NL_65|4.6MB/s|R002-260618 [bcf20a2004d6]
+  - 🇮🇩ID_3|608KB/s|R002-260618 [1e85b67c9f00]
+  - 🇳🇱NL_256|3.2MB/s|R002-260618 [473082dc26a6]
+  - 🇳🇱NL_80|6.7MB/s [faaf59d2e35f]
+  - 🇩🇪DE_79|4.4MB/s [eafd2408d13f]
+  - 🇳🇱NL_92|5.5MB/s|R002-260618 [4251bc4d7d7f]
   - 🇷🇴RO_91|1.3MB/s|P002-260618 [a767ca6149fc]
   - 🇳🇱NL_202|6.1MB/s|R002-260618 [6c371118d960]
-  - 🇯🇵JP_6|145KB/s|P002-260618 [6c3b615333c9]
-  - 🇺🇸US_86|771KB/s|P002-260618 [e1485bbbb7ea]
-  - 🇺🇸US_83|812KB/s|P002-260618 [0002809537c4]
-  - 🇺🇸US_114|781KB/s|P002-260618 [d0b846fb0830]
-  - 🇫🇷FR_49|1.6MB/s|R002-260618 [11547d29f85c]
-  - 🇳🇱NL_81|3.1MB/s|K001-260618 [0314ff07d8b2]
+  - 🇺🇸US_636|633KB/s|R002-260618 [82bc43fb8ccb]
+  - 🇷🇴RO_53|1.8MB/s|P002-260618 [f61079c44a7c]
+  - 🇫🇷FR_50|854KB/s|R002-260618 [e5d47e171534]
+  - 🇨🇭CH_27|1005KB/s|P002-260618 [58b636345fb8]
+  - NL_speednode_0014
+  - 🇷🇴RO_94|2.0MB/s|R002-260618 [89c9a614ae47]
+  - 🇷🇴RO_60|1.9MB/s|R002-260618 [f438a8f40ada]
   - 🇷🇴RO_8|1.4MB/s|P002-260618 [6afe02c1bfa7]
-  - 🇵🇱PL_2|2.1MB/s|R002-260618 [908517e451bd]
-  - 🇳🇱NL_195|963KB/s|R002-260618 [d9c7802c7ad5]
-  - 🇺🇸US_87|812KB/s|P002-260618 [d842677472af]
-  - 🇺🇸US_570|236KB/s [0205d799a499]
-  - 🇮🇩ID_1|680KB/s|R002-260618 [964f620b2028]
-  - 🇺🇸US_173|763KB/s|R002-260618 [cfc8a4e1f4af]
-  - 🇳🇱NL_109|4.4MB/s|P002-260618 [111aaa619f5f]
-  - 🇨🇿CZ_1|2.5MB/s|R002-260618 [dea96bfbdd9e]
-  - 🇷🇸RS_4|1.1MB/s|R002-260618 [abf608120240]
-  - 🇬🇷GR_1|865KB/s|R002-260618 [d9919f848d30]
-  - 🇳🇱NL_145|4.9MB/s [0bc1f2c7dc62]
-  - 🇪🇸ES_5|1.0MB/s|P002-260618 [c556a1f601e6]
-  - 🇵🇱PL_3|2.4MB/s|K001-260618 [7d600a30a2b6]
-  - 🇺🇸US_56|745KB/s|R002-260618 [1ebc3aabf01f]
-  - 🇷🇴RO_71|1.9MB/s|R002-260618 [11354267ebab]
-  - 🇵🇹PT_3|943KB/s|R002-260618 [1379b2c67a6d]
-  - 🇺🇸US_82|769KB/s|R002-260618 [b5fee3ef00a5]
-  - 🇺🇸US_507|770KB/s|R002-260618 [2c2fa1ad5771]
-  - 🇷🇴RO_48|2.2MB/s|R002-260618 [16b7d44488cc]
-  - 🇵🇱PL_1|2.8MB/s|P002-260618 [0559e2b40cf9]
-  - 🇭🇷HR_1|576KB/s|R002-260618 [117c7e706dc7]
+  - 🇩🇪DE_3|5.0MB/s|R002-260618 [379f30666176]
+  - 🇺🇸US_544|948KB/s|R002-260618 [e971c1f60e14]
+  - 🇩🇪DE_34|6.1MB/s|P002-260618 [b8878eeb693b]
+  - 🇷🇴RO_19|2.1MB/s [35f7c2fa6776]
+  - 🇺🇸US_83|812KB/s|P002-260618 [0002809537c4]
+  - 🇷🇸RS_1|977KB/s|P002-260618 [fcdfc2675766]
+  - 🇯🇵JP_6|145KB/s|P002-260618 [6c3b615333c9]
   - 🇱🇻LV_7|1.2MB/s|K001-260618 [7fdfdf3fba37]
-  - 🇮🇱IL_2|1.3MB/s|K001-260618 [d3b607996ace]
-  - 🇸🇬SG_41|676KB/s|R002-260618 [1371d7facb24]
-  - 🇮🇱IL_1|1.4MB/s|R002-260618 [bb294b91a05b]
-  - 🇮🇱IL_4|1.5MB/s [7954caa808ec]
+  - 🇵🇱PL_3|2.4MB/s|K001-260618 [7d600a30a2b6]
+  - 🇺🇸US_557|914KB/s [8cb877750987]
+  - 🇺🇸US_205|163KB/s|R002-260618 [5f9e954fe312]
+  - 🇪🇸ES_5|1.0MB/s|P002-260618 [c556a1f601e6]
   - 🇸🇪SE_6|1.4MB/s|P002-260618 [30db867996ba]
+  - 🇺🇸US_507|770KB/s|R002-260618 [2c2fa1ad5771]
+  - 🇵🇱PL_2|2.1MB/s|R002-260618 [908517e451bd]
+  - 🇮🇱IL_4|1.5MB/s [7954caa808ec]
+  - 🇫🇷FR_49|1.6MB/s|R002-260618 [11547d29f85c]
+  - 🇷🇸RS_4|1.1MB/s|R002-260618 [abf608120240]
+  - 🇳🇱NL_109|4.4MB/s|P002-260618 [111aaa619f5f]
+  - 🇳🇱NL_195|963KB/s|R002-260618 [d9c7802c7ad5]
   - 🇵🇹PT_1|1.0MB/s|P002-260618 [49b2871639da]
-  - 🇸🇬SG_9|582KB/s|R002-260618 [89790aba7d69]
-  - 🇮🇩ID_3|608KB/s|R002-260618 [1e85b67c9f00]
   - 🇺🇸US_25|802KB/s|R002-260618 [747f40a249e2]
-  - 🇮🇩ID_4|442KB/s|R002-260618 [6d6be7d79ea1]
+  - 🇺🇸US_86|771KB/s|P002-260618 [e1485bbbb7ea]
+  - 🇳🇱NL_145|4.9MB/s [0bc1f2c7dc62]
   - 🇺🇸US_206|778KB/s|R002-260618 [2e68419aab69]
-  - 🇸🇬SG_33|269KB/s|K001-260618 [70b4ebb2f0c1]
+  - 🇺🇸US_114|781KB/s|P002-260618 [d0b846fb0830]
+  - 🇮🇱IL_1|1.4MB/s|R002-260618 [bb294b91a05b]
+  - 🇺🇸US_173|763KB/s|R002-260618 [cfc8a4e1f4af]
+  - 🇳🇱NL_81|3.1MB/s|K001-260618 [0314ff07d8b2]
+  - 🇵🇱PL_1|2.8MB/s|P002-260618 [0559e2b40cf9]
+  - 🇺🇸US_82|769KB/s|R002-260618 [b5fee3ef00a5]
+  - 🇵🇹PT_3|943KB/s|R002-260618 [1379b2c67a6d]
+  - 🇺🇸US_612|118KB/s|M003-260806 [11202b21892a]
+  - 🇺🇸US_87|812KB/s|P002-260618 [d842677472af]
+  - 🇷🇴RO_48|2.2MB/s|R002-260618 [16b7d44488cc]
   - 🇺🇸US_110|736KB/s|K001-260618 [34ec23bd9506]
+  - 🇬🇷GR_1|865KB/s|R002-260618 [d9919f848d30]
+  - 🇮🇱IL_2|1.3MB/s|K001-260618 [d3b607996ace]
+  - 🇭🇷HR_1|576KB/s|R002-260618 [117c7e706dc7]
+  - 🇨🇿CZ_1|2.5MB/s|R002-260618 [dea96bfbdd9e]
+  - 🇷🇴RO_71|1.9MB/s|R002-260618 [11354267ebab]
+  - 🇸🇬SG_9|582KB/s|R002-260618 [89790aba7d69]
+  - 🇮🇩ID_4|442KB/s|R002-260618 [6d6be7d79ea1]
+  - 🇸🇬SG_33|269KB/s|K001-260618 [70b4ebb2f0c1]
+  - 🇸🇬SG_41|676KB/s|R002-260618 [1371d7facb24]
+  - 🇮🇩ID_1|680KB/s|R002-260618 [964f620b2028]
 - name: ⚡ 源测速达标
   type: select
   proxies:
@@ -3243,9 +3271,9 @@ proxy-groups:
   - 🇳🇱NL_112|5.4MB/s|P002-260618 [95c96fb6d441]
   - 🇬🇧GB_1|5.3MB/s|A004-260618 [07aa7760ced3]
   - 🇮🇪IE_4|5.3MB/s|K001-260618 [9484e3e833d4]
+  - 🇬🇧GB_26|5.3MB/s|M003-260806 [c098ce6d60bc]
   - 🇳🇱NL_20|5.3MB/s|P002-260618 [f84dd5f92876]
   - 🇳🇱NL_83|5.3MB/s|R002-260618 [f955e95e696e]
-  - 🇰🇷KR_1|5.3MB/s
   - 🇩🇪DE_62|5.2MB/s|M003-260806 [28e62b7f0576]
   - 🇫🇷FR_131|5.2MB/s|M003-260806 [38d58d240994]
   - 🇳🇱NL_90|5.2MB/s|R002-260618 [565ec6032e34]
@@ -3255,7 +3283,6 @@ proxy-groups:
   - 🇫🇷FR_52|5.1MB/s|K001-260618 [67502fd6c731]
   - 🇫🇷FR_17|5.1MB/s|R002-260618 [a676be7daa09]
   - 🇫🇷FR_132|5.1MB/s|M003-260806 [b089a30d23af]
-  - 🇰🇷KR_2|5.1MB/s
   - 🇩🇪DE_164|5.0MB/s|S001-260618 [036a98c673ba]
   - 🇫🇷FR_135|5.0MB/s|M003-260806 [1bf76171adc3]
   - 🇩🇪DE_7|5.0MB/s|M003-260806 [491c0044b9dc]
@@ -3288,34 +3315,47 @@ proxy-groups:
   - 🇫🇷FR_84|4.3MB/s|M003-260806 [f67f51250ba6]
   - 🇳🇱NL_111|4.2MB/s|A003-260618 [041f865582a1]
   - 🇩🇪DE_87|4.2MB/s|C002-260622 [2f03de46cd9e]
+  - 🇩🇪DE_52|4.2MB/s|A004-260618 [4017f3ee016d]
 - name: 🛜 hy2/WG存活筛选
   type: select
   proxies:
-  - 🇫🇷FR_1|3.1MB/s
+  - 🇺🇸_US_美国_IPV4 (2)
+  - 🇺🇸_US_美国_IPV4 (2) (2)
+  - 🇺🇸_US_美国_IPV4 (3)
+  - 🇫🇷_FR_法国_IPV4
+  - 🇺🇸_US_美国_IPV4 (4)
+  - https://alvin9999.com
   - 'https://alvin9999.com #1'
   - 'https://alvin9999.com #2'
-  - 🇳🇱229914 | ⚡️Telegram = t.me/L...
-  - ' 🇺🇸 23@exclavevpn'
+  - 🇺🇸 24@exclavevpn
+  - 🇬🇧25@exclavevpn
   - 🇺🇸139909 | ⚡️Telegram = t.me/S...
+  - 🆓13@oneclickvpnkeys
   - 🔰66@oneclickvpnkeys
+  - 🇺🇸230832 | ⚡️Telegram = t.me/L...
+  - '@VPsave'
   - '@ConfigV2RayNG'
-  - 🔰33@oneclickvpnkeys
   - ✅  @vistav2ray کانال ما ✅
   - '✅  @vistav2ray کانال ما ✅ #1'
-  - '@OutlineReleasedKey'
-  - '@OutlineReleasedKey #2'
-  - '@tootffarangi🍓-5'
-  - 📗66@oneclickvpnkeys
-  - '@tootffarangi🍓-6'
-  - '@VPsave'
+  - 🇫🇷230830 | ⚡️Telegram = t.me/L...
+  - 🇫🇷230827 | ⚡️Telegram = t.me/L...
   - '@VPsave #1'
+  - '@OutlineReleasedKey'
+  - '@OutlineReleasedKey #1'
+  - '@tootffarangi🍓-5'
+  - '@VPsave #2'
+  - '@tootffarangi🍓-6'
+  - '@VPsave #3'
   - '✅  @vistav2ray کانال ما ✅ #2'
   - '@B2Hub'
   - Telegram:@v2rayng3
-  - ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = @ꜰxxɴᴇᴛ🤡
+  - Telegram%@VPNConnectd
   - 🇸🇬214601 | ⚡️Telegram = t.me/v...
+  - '@OutlineReleasedKey #2'
+  - '🇬🇧 英国 | GBR #3'
+  - 🇺🇸230834 | ⚡️Telegram = t.me/L...
+  - 🇫🇷24@exclavevpn
   - 🩵+@Azarakhsh_Proxy+🩷
-  - '@v2ray313 کانالمون 😀'
   - Telegram@vpnjey
   - 'Telegram@vpnjey #1'
   - 'Telegram@vpnjey #2'
@@ -3323,158 +3363,150 @@ proxy-groups:
   - 'Telegram@vpnjey #4'
   - 'Telegram@vpnjey #5'
   - 'Telegram@vpnjey #6'
-  - 'Telegram@vpnjey #7'
+  - 🇩🇪230829 | ⚡️Telegram = t.me/L...
   - 'Telegram@vpnjey #8'
-  - '@OutlineReleasedKey #4'
   - '@OutlineReleasedKey #5'
+  - '@OutlineReleasedKey #6'
   - '@KAFING_2'
   - '@KAFING_2 #2'
-  - '@OutlineReleasedKey #6'
-  - 📗5@oneclickvpnkeys
+  - 🇫🇷230828 | ⚡️Telegram = t.me/L...
+  - '@VPsave #4'
+  - '@OutlineReleasedKey #7'
+  - 🇫🇷230767 | ⚡️Telegram = t.me/L...
   - '@tootffarangi🍓-3'
+  - '@VPsave #5'
   - '@v2ray_phoenix'
-  - 🇳🇱NL-🚀@VPNine1
+  - 🇳🇱24@exclavevpn
   - 🔰34@oneclickvpnkeys
   - 🔰32@oneclickvpnkeys
   - برای اتصال دائمی جوین شو🦠 Tele...
-  - '@OutlineReleasedKey #7'
   - '@OutlineReleasedKey #8'
-  - '@OutlineReleasedKey #9'
-  - 📗96@oneclickvpnkeys
   - '@confiig_hub #1'
   - 'Telegram@vpnjey #9'
   - 'Telegram@vpnjey #10'
-  - 新加坡1|@ripaojiedian
-  - '🇯🇵 日本 | JPN #2'
-  - ❓Other_1|1.6MB/s
-  - 🇨🇳CN_1|1.2MB/s
-  - 🇨🇳CN_2|2.9MB/s
-  - 🇨🇳CN_3|2.6MB/s
-  - 🇨🇳CN_4|1.6MB/s
-  - ❓Other_2|2.2MB/s
-  - '🇰🇷 韩国 | KOR #1'
-  - '🇳🇱 荷兰 | NLD #4'
-  - '🇸🇬 新加坡 | SGP #4'
-  - 🇭🇰 香港 | HKG 3
-  - 🇰🇷 韩国 | KOR
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇷🇺_俄罗斯 (19)
-  - 🇺🇸_美国 (32)
-  - 🇺🇸_美国 (33)
+  - '🇬🇧 英国 | GBR #1'
+  - '🇯🇵 日本 | JPN #1'
+  - '🇸🇬 新加坡 | SGP #5'
+  - 🇭🇰 香港 | HKG
+  - ProxyPool | 🇰🇷 韩国 | KOR 3
+  - 🇸🇬 新加坡 | SGP 3
 - name: 🌐 全部节点
   type: select
   proxies:
   - US美国(mibei77.com 米贝节点分享)
   - 🇫🇷FR_140|706KB/s|C002-260622 [6f275700373d]
   - 🇫🇷FR_105|1.3MB/s|B007-260618 [18a612463211]
-  - 🇺🇸US_59|174KB/s [60b18e513b09]
-  - 🇺🇸US_272|1.7MB/s|M003-260806 [0f851a6a1744]
-  - 🇺🇸US_468|928KB/s|K001-260618 [5708f18d59b1]
+  - 🇭🇰HK香港節點丨yoyapai.com_2
+  - 🇭🇰HK香港節點丨yoyapai.com
+  - 🇭🇰HK香港節點丨yoyapai.com (2)
   - 🇺🇸US_2|1.3MB/s [b3491eae71bd]
+  - 🇺🇸US_468|928KB/s|K001-260618 [5708f18d59b1]
+  - 🇨🇦_加拿大 (2)
   - 🇺🇸US_511|972KB/s|A004-260618 [3d3e162aa83d]
   - 🇺🇸US_52|1.3MB/s|M003-260806 [ecaaa0c4e1b7]
-  - '@DeltaKroneckerGithub_3021_IPV4'
-  - 🇮🇹IT意大利丨yoyapai.com
-  - 🇮🇹IT意大利丨yoyapai.com (7)
-  - ❓未知丨yoyapai.com (8)
-  - ❓未知丨yoyapai.com (4)
-  - 🇳🇱NL_32|4.8MB/s|A004-260618 [d8fb37e5c506]
-  - ❓未知丨yoyapai.com (18)
-  - 🇬🇧GB_26|5.3MB/s|M003-260806 [c098ce6d60bc]
-  - 🇮🇹IT意大利丨yoyapai.com (2)
-  - 🇪🇸ES_2|2.6MB/s|M003-260806 [f6618bfd7595]
   - 🇳🇱NL_53|5.8MB/s|A003-260618 [cb6ae96da10d]
-  - 🇮🇹IT意大利丨yoyapai.com (3)
-  - 🇳🇱NL_160|2.6MB/s [755ad3db773a]
-  - ❓未知丨yoyapai.com (5)
-  - 🇳🇱NL_29|7.0MB/s|A004-260618 [0e3d0fb5ae4d]
+  - 🇳🇱NL_32|4.8MB/s|A004-260618 [d8fb37e5c506]
   - 🇩🇪DE_66|5.9MB/s|M003-260806 [68341a0cc2e8]
-  - ❓未知丨yoyapai.com (17)
-  - ❓未知丨yoyapai.com (6)
+  - 🇳🇱NL_160|2.6MB/s [755ad3db773a]
+  - 🇺🇸US_272|1.7MB/s|M003-260806 [0f851a6a1744]
+  - ❓未知丨yoyapai.com (4)
+  - 🇳🇱NL_29|7.0MB/s|A004-260618 [0e3d0fb5ae4d]
   - 🇬🇧GB_27|84KB/s|A004-260618 [70c7619e3093]
-  - 🇩🇪DE_69|2.8MB/s|B007-260618 [1134b8e46720]
-  - 🇱🇹LT_7|2.0MB/s|A004-260618 [6fbcb073e15b]
-  - 🇧🇬BG_4|277KB/s|A004-260618 [67e57f79a756]
-  - 🇷🇺 俄罗斯 | RUS 2
+  - ❓未知丨yoyapai.com (17)
   - 🇧🇷BR_6|678KB/s|S004-260618 [2afd52a37d62]
+  - 🇮🇹IT意大利丨yoyapai.com (7)
+  - 🇩🇪DE_69|2.8MB/s|B007-260618 [1134b8e46720]
+  - 🇪🇸ES_2|2.6MB/s|M003-260806 [f6618bfd7595]
+  - ❓未知丨yoyapai.com (8)
+  - ❓未知丨yoyapai.com (5)
+  - ❓未知丨yoyapai.com (6)
+  - '@DeltaKroneckerGithub_3021_IPV4'
+  - ❓未知丨yoyapai.com (18)
+  - 🇧🇬BG_4|277KB/s|A004-260618 [67e57f79a756]
+  - 🇮🇹IT意大利丨yoyapai.com
+  - 🇮🇹IT意大利丨yoyapai.com (3)
+  - 🇱🇹LT_7|2.0MB/s|A004-260618 [6fbcb073e15b]
+  - 🇮🇹IT意大利丨yoyapai.com (2)
+  - 🇳🇱_荷兰 (4)
+  - 🇸🇬SG_24|827KB/s|M003-260806 [4a280760256b]
   - 🇧🇬BG_7|2.3MB/s|A004-260618 [947bcc18d420]
-  - 🇺🇸US_123|769KB/s|P002-260618 [30b959b768eb]
   - 🇺🇸US_595|789KB/s|P002-260618 [2cca269a4ba7]
+  - 🇺🇸US_123|769KB/s|P002-260618 [30b959b768eb]
+  - 🇺🇸US_56|745KB/s|R002-260618 [1ebc3aabf01f]
   - 🇺🇸US_170|820KB/s|R002-260618 [ffc0819f735f]
-  - 🇺🇸US_157|774KB/s [cf879bee4e97]
-  - TW台湾(mibei77.com 米贝节点分享) (5)
   - 🇺🇸US_134|806KB/s|P002-260618 [8d81cfcb4761]
-  - 🇺🇸US_139|808KB/s|P002-260618 [a8fb52dac60b]
   - 🇺🇸US_94|779KB/s|R002-260618 [edefc1e55ed7]
-  - 🇺🇸US_480|821KB/s|R002-260618 [8d0ae097fc88]
   - 🇺🇸US_15|713KB/s|R002-260618 [8bfc45feda47]
-  - 🇺🇸US_75|832KB/s|R002-260618 [fc73875d8c32]
-  - CA加拿大(mibei77.com 米贝节点分享) (3)
-  - 🇷🇴RO_25|2.0MB/s|R002-260618 [2a38cb0737ea]
-  - 🇳🇱NL_80|6.7MB/s [faaf59d2e35f]
-  - 🇺🇸US_636|633KB/s|R002-260618 [82bc43fb8ccb]
-  - NL_speednode_0014
-  - 🇺🇸US_8|859KB/s|P002-260618 [d71325a4e884]
+  - 🇺🇸US_139|808KB/s|P002-260618 [a8fb52dac60b]
+  - 🇺🇸US_157|774KB/s [cf879bee4e97]
+  - 🇺🇸US_480|821KB/s|R002-260618 [8d0ae097fc88]
   - 🇺🇸US_115|849KB/s|R002-260618 [69ea03375d59]
-  - 🇩🇪DE_3|5.0MB/s|R002-260618 [379f30666176]
-  - 🇫🇷FR_50|854KB/s|R002-260618 [e5d47e171534]
-  - 🇩🇪DE_79|4.4MB/s [eafd2408d13f]
-  - 🇳🇱NL_65|4.6MB/s|R002-260618 [bcf20a2004d6]
-  - 🇷🇴RO_60|1.9MB/s|R002-260618 [f438a8f40ada]
-  - 🇷🇸RS_1|977KB/s|P002-260618 [fcdfc2675766]
-  - 🇷🇴RO_53|1.8MB/s|P002-260618 [f61079c44a7c]
-  - 🇩🇪DE_34|6.1MB/s|P002-260618 [b8878eeb693b]
-  - 🇳🇱NL_256|3.2MB/s|R002-260618 [473082dc26a6]
-  - 🇳🇱NL_92|5.5MB/s|R002-260618 [4251bc4d7d7f]
-  - 🇨🇭CH_27|1005KB/s|P002-260618 [58b636345fb8]
+  - 🇷🇴RO_25|2.0MB/s|R002-260618 [2a38cb0737ea]
+  - 🇺🇸US_8|859KB/s|P002-260618 [d71325a4e884]
   - 🇳🇱NL_48|5.2MB/s|P002-260618 [6aa08aa36e29]
-  - 🇷🇴RO_19|2.1MB/s [35f7c2fa6776]
-  - 🇷🇴RO_94|2.0MB/s|R002-260618 [89c9a614ae47]
+  - 🇺🇸US_75|832KB/s|R002-260618 [fc73875d8c32]
+  - 🇳🇱NL_65|4.6MB/s|R002-260618 [bcf20a2004d6]
+  - 🇮🇩ID_3|608KB/s|R002-260618 [1e85b67c9f00]
+  - 🇳🇱NL_256|3.2MB/s|R002-260618 [473082dc26a6]
+  - 🇳🇱NL_80|6.7MB/s [faaf59d2e35f]
+  - 🇩🇪DE_79|4.4MB/s [eafd2408d13f]
+  - 🇳🇱NL_92|5.5MB/s|R002-260618 [4251bc4d7d7f]
   - 🇷🇴RO_91|1.3MB/s|P002-260618 [a767ca6149fc]
   - 🇳🇱NL_202|6.1MB/s|R002-260618 [6c371118d960]
-  - 🇯🇵JP_6|145KB/s|P002-260618 [6c3b615333c9]
-  - 🇺🇸US_86|771KB/s|P002-260618 [e1485bbbb7ea]
-  - 🇺🇸US_83|812KB/s|P002-260618 [0002809537c4]
-  - 🇺🇸US_114|781KB/s|P002-260618 [d0b846fb0830]
-  - 🇫🇷FR_49|1.6MB/s|R002-260618 [11547d29f85c]
-  - 🇳🇱NL_81|3.1MB/s|K001-260618 [0314ff07d8b2]
+  - 🇺🇸US_636|633KB/s|R002-260618 [82bc43fb8ccb]
+  - 🇷🇴RO_53|1.8MB/s|P002-260618 [f61079c44a7c]
+  - 🇫🇷FR_50|854KB/s|R002-260618 [e5d47e171534]
+  - 🇨🇭CH_27|1005KB/s|P002-260618 [58b636345fb8]
+  - NL_speednode_0014
+  - 🇷🇴RO_94|2.0MB/s|R002-260618 [89c9a614ae47]
+  - 🇷🇴RO_60|1.9MB/s|R002-260618 [f438a8f40ada]
   - 🇷🇴RO_8|1.4MB/s|P002-260618 [6afe02c1bfa7]
-  - 🇵🇱PL_2|2.1MB/s|R002-260618 [908517e451bd]
-  - 🇳🇱NL_195|963KB/s|R002-260618 [d9c7802c7ad5]
-  - 🇺🇸US_87|812KB/s|P002-260618 [d842677472af]
-  - 🇺🇸US_570|236KB/s [0205d799a499]
-  - 🇮🇩ID_1|680KB/s|R002-260618 [964f620b2028]
-  - 🇺🇸US_173|763KB/s|R002-260618 [cfc8a4e1f4af]
-  - 🇳🇱NL_109|4.4MB/s|P002-260618 [111aaa619f5f]
-  - 🇨🇿CZ_1|2.5MB/s|R002-260618 [dea96bfbdd9e]
-  - 🇷🇸RS_4|1.1MB/s|R002-260618 [abf608120240]
-  - 🇬🇷GR_1|865KB/s|R002-260618 [d9919f848d30]
-  - 🇳🇱NL_145|4.9MB/s [0bc1f2c7dc62]
-  - 🇪🇸ES_5|1.0MB/s|P002-260618 [c556a1f601e6]
-  - 🇵🇱PL_3|2.4MB/s|K001-260618 [7d600a30a2b6]
-  - 🇺🇸US_56|745KB/s|R002-260618 [1ebc3aabf01f]
-  - 🇷🇴RO_71|1.9MB/s|R002-260618 [11354267ebab]
-  - 🇵🇹PT_3|943KB/s|R002-260618 [1379b2c67a6d]
-  - 🇺🇸US_82|769KB/s|R002-260618 [b5fee3ef00a5]
-  - 🇺🇸US_507|770KB/s|R002-260618 [2c2fa1ad5771]
-  - 🇷🇴RO_48|2.2MB/s|R002-260618 [16b7d44488cc]
-  - 🇵🇱PL_1|2.8MB/s|P002-260618 [0559e2b40cf9]
-  - 🇭🇷HR_1|576KB/s|R002-260618 [117c7e706dc7]
+  - 🇩🇪DE_3|5.0MB/s|R002-260618 [379f30666176]
+  - 🇺🇸US_544|948KB/s|R002-260618 [e971c1f60e14]
+  - 🇩🇪DE_34|6.1MB/s|P002-260618 [b8878eeb693b]
+  - 🇷🇴RO_19|2.1MB/s [35f7c2fa6776]
+  - 🇺🇸US_83|812KB/s|P002-260618 [0002809537c4]
+  - 🇷🇸RS_1|977KB/s|P002-260618 [fcdfc2675766]
+  - 🇯🇵JP_6|145KB/s|P002-260618 [6c3b615333c9]
   - 🇱🇻LV_7|1.2MB/s|K001-260618 [7fdfdf3fba37]
-  - 🇮🇱IL_2|1.3MB/s|K001-260618 [d3b607996ace]
-  - 🇸🇬SG_41|676KB/s|R002-260618 [1371d7facb24]
-  - 🇮🇱IL_1|1.4MB/s|R002-260618 [bb294b91a05b]
-  - 🇮🇱IL_4|1.5MB/s [7954caa808ec]
+  - 🇵🇱PL_3|2.4MB/s|K001-260618 [7d600a30a2b6]
+  - 🇺🇸US_557|914KB/s [8cb877750987]
+  - 🇺🇸US_205|163KB/s|R002-260618 [5f9e954fe312]
+  - 🇪🇸ES_5|1.0MB/s|P002-260618 [c556a1f601e6]
   - 🇸🇪SE_6|1.4MB/s|P002-260618 [30db867996ba]
+  - 🇺🇸US_507|770KB/s|R002-260618 [2c2fa1ad5771]
+  - 🇵🇱PL_2|2.1MB/s|R002-260618 [908517e451bd]
+  - 🇮🇱IL_4|1.5MB/s [7954caa808ec]
+  - 🇫🇷FR_49|1.6MB/s|R002-260618 [11547d29f85c]
+  - 🇷🇸RS_4|1.1MB/s|R002-260618 [abf608120240]
+  - 🇳🇱NL_109|4.4MB/s|P002-260618 [111aaa619f5f]
+  - 🇳🇱NL_195|963KB/s|R002-260618 [d9c7802c7ad5]
   - 🇵🇹PT_1|1.0MB/s|P002-260618 [49b2871639da]
-  - 🇸🇬SG_9|582KB/s|R002-260618 [89790aba7d69]
-  - 🇮🇩ID_3|608KB/s|R002-260618 [1e85b67c9f00]
   - 🇺🇸US_25|802KB/s|R002-260618 [747f40a249e2]
-  - 🇮🇩ID_4|442KB/s|R002-260618 [6d6be7d79ea1]
+  - 🇺🇸US_86|771KB/s|P002-260618 [e1485bbbb7ea]
+  - 🇳🇱NL_145|4.9MB/s [0bc1f2c7dc62]
   - 🇺🇸US_206|778KB/s|R002-260618 [2e68419aab69]
-  - 🇸🇬SG_33|269KB/s|K001-260618 [70b4ebb2f0c1]
+  - 🇺🇸US_114|781KB/s|P002-260618 [d0b846fb0830]
+  - 🇮🇱IL_1|1.4MB/s|R002-260618 [bb294b91a05b]
+  - 🇺🇸US_173|763KB/s|R002-260618 [cfc8a4e1f4af]
+  - 🇳🇱NL_81|3.1MB/s|K001-260618 [0314ff07d8b2]
+  - 🇵🇱PL_1|2.8MB/s|P002-260618 [0559e2b40cf9]
+  - 🇺🇸US_82|769KB/s|R002-260618 [b5fee3ef00a5]
+  - 🇵🇹PT_3|943KB/s|R002-260618 [1379b2c67a6d]
+  - 🇺🇸US_612|118KB/s|M003-260806 [11202b21892a]
+  - 🇺🇸US_87|812KB/s|P002-260618 [d842677472af]
+  - 🇷🇴RO_48|2.2MB/s|R002-260618 [16b7d44488cc]
   - 🇺🇸US_110|736KB/s|K001-260618 [34ec23bd9506]
+  - 🇬🇷GR_1|865KB/s|R002-260618 [d9919f848d30]
+  - 🇮🇱IL_2|1.3MB/s|K001-260618 [d3b607996ace]
+  - 🇭🇷HR_1|576KB/s|R002-260618 [117c7e706dc7]
+  - 🇨🇿CZ_1|2.5MB/s|R002-260618 [dea96bfbdd9e]
+  - 🇷🇴RO_71|1.9MB/s|R002-260618 [11354267ebab]
+  - 🇸🇬SG_9|582KB/s|R002-260618 [89790aba7d69]
+  - 🇮🇩ID_4|442KB/s|R002-260618 [6d6be7d79ea1]
+  - 🇸🇬SG_33|269KB/s|K001-260618 [70b4ebb2f0c1]
+  - 🇸🇬SG_41|676KB/s|R002-260618 [1371d7facb24]
+  - 🇮🇩ID_1|680KB/s|R002-260618 [964f620b2028]
   - 🇳🇱NL_163|9.6MB/s|A004-260618 [5d74d658f7e7]
   - 🇳🇱NL_14|9.2MB/s [c3dbcf50fb16]
   - 🇳🇱NL_17|8.8MB/s|B007-260618 [123cd8d0ee47]
@@ -3560,9 +3592,9 @@ proxy-groups:
   - 🇳🇱NL_112|5.4MB/s|P002-260618 [95c96fb6d441]
   - 🇬🇧GB_1|5.3MB/s|A004-260618 [07aa7760ced3]
   - 🇮🇪IE_4|5.3MB/s|K001-260618 [9484e3e833d4]
+  - 🇬🇧GB_26|5.3MB/s|M003-260806 [c098ce6d60bc]
   - 🇳🇱NL_20|5.3MB/s|P002-260618 [f84dd5f92876]
   - 🇳🇱NL_83|5.3MB/s|R002-260618 [f955e95e696e]
-  - 🇰🇷KR_1|5.3MB/s
   - 🇩🇪DE_62|5.2MB/s|M003-260806 [28e62b7f0576]
   - 🇫🇷FR_131|5.2MB/s|M003-260806 [38d58d240994]
   - 🇳🇱NL_90|5.2MB/s|R002-260618 [565ec6032e34]
@@ -3572,7 +3604,6 @@ proxy-groups:
   - 🇫🇷FR_52|5.1MB/s|K001-260618 [67502fd6c731]
   - 🇫🇷FR_17|5.1MB/s|R002-260618 [a676be7daa09]
   - 🇫🇷FR_132|5.1MB/s|M003-260806 [b089a30d23af]
-  - 🇰🇷KR_2|5.1MB/s
   - 🇩🇪DE_164|5.0MB/s|S001-260618 [036a98c673ba]
   - 🇫🇷FR_135|5.0MB/s|M003-260806 [1bf76171adc3]
   - 🇩🇪DE_7|5.0MB/s|M003-260806 [491c0044b9dc]
@@ -3605,31 +3636,44 @@ proxy-groups:
   - 🇫🇷FR_84|4.3MB/s|M003-260806 [f67f51250ba6]
   - 🇳🇱NL_111|4.2MB/s|A003-260618 [041f865582a1]
   - 🇩🇪DE_87|4.2MB/s|C002-260622 [2f03de46cd9e]
-  - 🇫🇷FR_1|3.1MB/s
+  - 🇩🇪DE_52|4.2MB/s|A004-260618 [4017f3ee016d]
+  - 🇺🇸_US_美国_IPV4 (2)
+  - 🇺🇸_US_美国_IPV4 (2) (2)
+  - 🇺🇸_US_美国_IPV4 (3)
+  - 🇫🇷_FR_法国_IPV4
+  - 🇺🇸_US_美国_IPV4 (4)
+  - https://alvin9999.com
   - 'https://alvin9999.com #1'
   - 'https://alvin9999.com #2'
-  - 🇳🇱229914 | ⚡️Telegram = t.me/L...
-  - ' 🇺🇸 23@exclavevpn'
+  - 🇺🇸 24@exclavevpn
+  - 🇬🇧25@exclavevpn
   - 🇺🇸139909 | ⚡️Telegram = t.me/S...
+  - 🆓13@oneclickvpnkeys
   - 🔰66@oneclickvpnkeys
+  - 🇺🇸230832 | ⚡️Telegram = t.me/L...
+  - '@VPsave'
   - '@ConfigV2RayNG'
-  - 🔰33@oneclickvpnkeys
   - ✅  @vistav2ray کانال ما ✅
   - '✅  @vistav2ray کانال ما ✅ #1'
-  - '@OutlineReleasedKey'
-  - '@OutlineReleasedKey #2'
-  - '@tootffarangi🍓-5'
-  - 📗66@oneclickvpnkeys
-  - '@tootffarangi🍓-6'
-  - '@VPsave'
+  - 🇫🇷230830 | ⚡️Telegram = t.me/L...
+  - 🇫🇷230827 | ⚡️Telegram = t.me/L...
   - '@VPsave #1'
+  - '@OutlineReleasedKey'
+  - '@OutlineReleasedKey #1'
+  - '@tootffarangi🍓-5'
+  - '@VPsave #2'
+  - '@tootffarangi🍓-6'
+  - '@VPsave #3'
   - '✅  @vistav2ray کانال ما ✅ #2'
   - '@B2Hub'
   - Telegram:@v2rayng3
-  - ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = @ꜰxxɴᴇᴛ🤡
+  - Telegram%@VPNConnectd
   - 🇸🇬214601 | ⚡️Telegram = t.me/v...
+  - '@OutlineReleasedKey #2'
+  - '🇬🇧 英国 | GBR #3'
+  - 🇺🇸230834 | ⚡️Telegram = t.me/L...
+  - 🇫🇷24@exclavevpn
   - 🩵+@Azarakhsh_Proxy+🩷
-  - '@v2ray313 کانالمون 😀'
   - Telegram@vpnjey
   - 'Telegram@vpnjey #1'
   - 'Telegram@vpnjey #2'
@@ -3637,44 +3681,32 @@ proxy-groups:
   - 'Telegram@vpnjey #4'
   - 'Telegram@vpnjey #5'
   - 'Telegram@vpnjey #6'
-  - 'Telegram@vpnjey #7'
+  - 🇩🇪230829 | ⚡️Telegram = t.me/L...
   - 'Telegram@vpnjey #8'
-  - '@OutlineReleasedKey #4'
   - '@OutlineReleasedKey #5'
+  - '@OutlineReleasedKey #6'
   - '@KAFING_2'
   - '@KAFING_2 #2'
-  - '@OutlineReleasedKey #6'
-  - 📗5@oneclickvpnkeys
+  - 🇫🇷230828 | ⚡️Telegram = t.me/L...
+  - '@VPsave #4'
+  - '@OutlineReleasedKey #7'
+  - 🇫🇷230767 | ⚡️Telegram = t.me/L...
   - '@tootffarangi🍓-3'
+  - '@VPsave #5'
   - '@v2ray_phoenix'
-  - 🇳🇱NL-🚀@VPNine1
+  - 🇳🇱24@exclavevpn
   - 🔰34@oneclickvpnkeys
   - 🔰32@oneclickvpnkeys
   - برای اتصال دائمی جوین شو🦠 Tele...
-  - '@OutlineReleasedKey #7'
   - '@OutlineReleasedKey #8'
-  - '@OutlineReleasedKey #9'
-  - 📗96@oneclickvpnkeys
   - '@confiig_hub #1'
   - 'Telegram@vpnjey #9'
   - 'Telegram@vpnjey #10'
-  - 新加坡1|@ripaojiedian
-  - '🇯🇵 日本 | JPN #2'
-  - ❓Other_1|1.6MB/s
-  - 🇨🇳CN_1|1.2MB/s
-  - 🇨🇳CN_2|2.9MB/s
-  - 🇨🇳CN_3|2.6MB/s
-  - 🇨🇳CN_4|1.6MB/s
-  - ❓Other_2|2.2MB/s
-  - '🇰🇷 韩国 | KOR #1'
-  - '🇳🇱 荷兰 | NLD #4'
-  - '🇸🇬 新加坡 | SGP #4'
-  - 🇭🇰 香港 | HKG 3
-  - 🇰🇷 韩国 | KOR
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇷🇺_俄罗斯 (19)
-  - 🇺🇸_美国 (32)
-  - 🇺🇸_美国 (33)
+  - '🇬🇧 英国 | GBR #1'
+  - '🇯🇵 日本 | JPN #1'
+  - '🇸🇬 新加坡 | SGP #5'
+  - 🇭🇰 香港 | HKG
+  - ProxyPool | 🇰🇷 韩国 | KOR 3
+  - 🇸🇬 新加坡 | SGP 3
 rules:
 - MATCH,🚀 节点选择
